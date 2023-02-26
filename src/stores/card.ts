@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 import type { Card } from "@/interfaces/Card";
 import type { Location } from '@/interfaces/Location';
+import AllCards from "@/cards.json";
 
 interface State {
   cards: Card[]
@@ -30,3 +31,6 @@ export const useCardStore = defineStore("card", {
     },
   },
 });
+
+const store = useCardStore();
+store.setCards(AllCards);

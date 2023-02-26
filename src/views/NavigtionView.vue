@@ -20,8 +20,11 @@ import { RouterLink } from "vue-router"
         <div class="item">
           <RouterLink to="/locations">Локации</RouterLink>
         </div>
+        <div class="item">
+          <RouterLink to="/about">О нас</RouterLink>
+        </div>
       </div>
-      <SearchComponent />
+      <!-- <SearchComponent /> -->
     </nav>
     <div class="br"></div>
   </div>
