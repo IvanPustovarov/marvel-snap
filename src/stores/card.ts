@@ -19,7 +19,7 @@ export const useCardStore = defineStore("card", {
   },
   getters: {
     getCard: (state) => {
-        return (id: number) => state.cards.find((card: Card) => card.name === id.toString());
+        return (name: string) => state.cards.find((card: Card) => card.name === name);
     }
   },
   actions: {

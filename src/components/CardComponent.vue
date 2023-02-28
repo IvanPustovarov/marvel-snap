@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import type { Card } from '@/interfaces/Card';
+import { useRouter, useRoute } from 'vue-router'
 import CardView from '@/views/CardView.vue';
 
+const router = useRouter();
 const props = defineProps<{
   card: Card
 }>()
@@ -16,7 +18,7 @@ function editDescription(text: string): string | null {
   }
 
   function goToCard () {
-
+    return router.push(`/card/${props.card.name}`);
   }
 
   function mouseEnter () {
@@ -31,9 +33,9 @@ function editDescription(text: string): string | null {
 
   }
 
-    function getImageUrl (name: string) {
-        return new URL(`../assets/cards/${name}.webp`, import.meta.url).href
-    }
+  function getImageUrl (name: string) {
+      return new URL(`../assets/cards/${name}.webp`, import.meta.url).href
+  }
 
 </script>
 
