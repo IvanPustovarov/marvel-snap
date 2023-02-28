@@ -7,20 +7,12 @@ const props = defineProps<{
 }>()
 
 function editDescription(text: string): string | null {
-      // const revealRegexp = /При раскрытии:/gi;
-      // const ongoingRegexp = /Продолжительный эффект:/gi;
-      // '<span class="span-ability">При раскрытии:</span>'
-      //  '<span class="span-ability">Продолжительный эффект:</span>'
-
-      function replacer(match: string, p1: string, p2: string) {
-      // p1 is non-digits, p2 digits, and p3 non-alphanumerics
-      console.log("p1: ", p1, "p2: ", p2);
-      return ``;
-    }
+    let result = '';
       if(text.length) {
-        let newDescription = text.replace(/([При раскрытии:])([Продолжительный эффект:])/, replacer);
+        let newDescription = text.replace(/При раскрытии:/gi, '<span class="span-ability">При раскрытии:</span>');
+        result = newDescription.replace(/Продолжительный эффект:/gi, '<span class="span-ability">Продолжительный эффект:</span>')
       }
-      return null;
+      return result;
   }
 
   function goToCard () {
