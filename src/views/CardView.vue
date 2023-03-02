@@ -19,7 +19,8 @@ function pool() {
         3: '2 пул',
         4: '3 пул',
         5: '4 пул',
-        6: '5 пул'
+        6: '5 пул',
+        7: '6 пул'
       }
       if(card) return poolRus[card.pool];
       return undefined;
@@ -31,7 +32,7 @@ function release () {
 
 function getImageUrl (name: string | undefined) {
       return new URL(`../assets/cards/${name}.webp`, import.meta.url).href
-  }
+}
 
 </script>
 
@@ -54,8 +55,7 @@ function getImageUrl (name: string | undefined) {
           {{ release() }}
         </div>
         <div>
-          Источник:
-          <div>{{ pool() }}</div>
+          Источник: {{ pool() }}
         </div>
       </div>
     </div>

@@ -55,11 +55,16 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
   background: linear-gradient(180deg, rgba(23, 12, 40, 0.9), rgb(24, 15, 46));
   background-size: 400% 400%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(160, 144, 185, 0.9), rgb(109, 72, 200));
+  border-radius: 10px;
 }
 </style>

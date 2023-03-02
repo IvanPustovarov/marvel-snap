@@ -21,18 +21,6 @@ function editDescription(text: string): string | null {
     return router.push(`/card/${props.card.name}`);
   }
 
-  function mouseEnter () {
-
-  }
-
-  function mouseMove () {
-
-  }
-
-  function mouseLeave () {
-
-  }
-
   function getImageUrl (name: string) {
       return new URL(`../assets/cards/${name}.webp`, import.meta.url).href
   }
@@ -45,9 +33,6 @@ function editDescription(text: string): string | null {
           <img
             :src="getImageUrl(card.name)"
             alt="card"
-            @mouseenter="mouseEnter"
-            @mousemove="mouseMove"
-            @mouseleave="mouseLeave"
           />
           <div v-html="editDescription(card.description)" class="description"></div>
         </div>
@@ -91,6 +76,10 @@ function editDescription(text: string): string | null {
     }
     img {
       width: 300px;
+      transition: all 0.3s ease-out;
+      &:hover{
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1.035, 1.035, 1.035);
+      }
     }
   }
 }
