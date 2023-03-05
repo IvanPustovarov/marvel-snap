@@ -1,9 +1,14 @@
+<script setup lang="ts">
+</script>
+
 <template>
-    <div>
+    <div class="about-container">
         About View
     </div>
 </template>
 
-<style>
-
+<style scoped lang="scss">
+    .about-container{
+        flex: 1;
+    }
 </style>

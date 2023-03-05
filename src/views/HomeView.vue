@@ -2,7 +2,13 @@
 </script>
 
 <template>
-  <div>
-    Home View
+  <div class="home-container">
+
   </div>
 </template>
+
+<style lang="scss" scoped>
+.home-container{
+  flex: 1;
+}
+</style>

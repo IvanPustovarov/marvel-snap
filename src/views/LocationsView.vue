@@ -2,10 +2,13 @@
 </script>
 
 <template>
-    <div>
+    <div class="locations-container">
         Locations View
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+.locations-container{
+    flex: 1;
+}
 </style>

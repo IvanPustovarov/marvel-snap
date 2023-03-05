@@ -1,30 +1,53 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router"
+import { ref } from 'vue'
+import { onClickOutside } from '@vueuse/core'
+import ModalSearch from "@/components/ModalSearch.vue"
+
+
+const modal = ref(false);
+const modalRef = ref(null);
+onClickOutside(
+  modalRef,
+  (event) => {
+    modal.value = false
+  },
+)
+
+function changeShow () {
+  modal.value = false;
+}
+
 </script>
 
 <template>
    <div class="nav-panel">
     <nav>
-      <div class="logo-img">
-        <RouterLink to="/">
-          <img src="@/assets/img/logo.png" alt="" />
-        </RouterLink>
-      </div>
+        <div class="logo-img">
+          <RouterLink to="/">
+            <img src="@/assets/img/logo.png" alt="" />
+          </RouterLink>
+        </div>
       <div class="links">
-        <div class="item">
-          <RouterLink to="/">Главная</RouterLink>
-        </div>
-        <div class="item">
-          <RouterLink to="/cards">Карты</RouterLink>
-        </div>
-        <div class="item">
-          <RouterLink to="/locations">Локации</RouterLink>
-        </div>
-        <div class="item">
-          <RouterLink to="/about">О нас</RouterLink>
-        </div>
+            <div class="item">
+              <RouterLink to="/">Главная</RouterLink>
+            </div>
+            <div class="item">
+              <RouterLink to="/cards">Карты</RouterLink>
+            </div>
+            <div class="item">
+              <RouterLink to="/locations">Локации</RouterLink>
+            </div>
+            <div class="item">
+              <RouterLink to="/about">О нас</RouterLink>
+            </div>
+            <div class="item" @click="modal = true">
+              <span>Поиск</span>
+            </div>
+            <div v-if="modal" ref="modalRef" class="modal">
+                <ModalSearch @show='changeShow' />
+            </div>
       </div>
-      <!-- <SearchComponent /> -->
     </nav>
     <div class="br"></div>
   </div>
@@ -39,7 +62,7 @@ import { RouterLink } from "vue-router"
     display: flex;
     flex-direction: row;
     position: relative;
-    a {
+    a, span {
       font-style: italic;
       font-weight: 600;
       color: #ffffff;
@@ -74,7 +97,8 @@ import { RouterLink } from "vue-router"
         height: 5rem;
         align-items: center;
         font-size: 18px;
-        a {
+        a, span {
+          cursor: pointer;
           text-decoration: none;
           padding: 2.5rem 1rem 2.5rem 0;
         }
@@ -86,6 +110,17 @@ import { RouterLink } from "vue-router"
                     );
           background-size: 200% 200%;
         }
+      }
+
+      .modal{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 420px;
+        max-width: 100%;
+        z-index: 10;
+        color: black;
       }
     }
   }
