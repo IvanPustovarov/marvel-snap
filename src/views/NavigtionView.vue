@@ -120,16 +120,15 @@ function changeShow () {
         width: 420px;
         max-width: 100%;
         z-index: 10;
-        color: black;
       }
     }
   }
   .br {
-  height: 0.7rem;
-  background: linear-gradient(-45deg, #ed193b, #a98055, #f286e2, #681d7a);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-}
+    height: 0.7rem;
+    background: linear-gradient(-45deg, #ed193b, #a98055, #f286e2, #681d7a);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+  }
 }
 
 

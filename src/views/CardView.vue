@@ -39,7 +39,10 @@ function getImageUrl (name: string | undefined) {
 <template>
    <div class="container-card">
     <div class="card">
-      <img :src="getImageUrl(card?.name)" alt="card" />
+      <div class="img-container">
+        <img :src="getImageUrl(card?.name)" alt="card" />
+        <div class="border-hover"></div>
+      </div>
       <div class="info">
         <div class="card-desc">
           <span>Описание:</span>
@@ -64,15 +67,34 @@ function getImageUrl (name: string | undefined) {
 
 <style scoped lang="scss">
 .container-card {
-    display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1;
   margin-top: 2rem;
+
   .card {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
+
+      .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+          .border-hover {
+            position: fixed;
+            padding: 220px 159px;
+            transition: all 0.5s ease-out;
+            &:hover{
+              box-shadow: inset 0px 0px 17px 2px rgba(255, 255, 255, 0.5),
+                          0px 0px 49px 6px rgba(255, 255, 255, 0.5);
+            }
+          }
+
+        }
+
     .info {
       .card-desc{
         display: flex;
@@ -90,12 +112,12 @@ function getImageUrl (name: string | undefined) {
       width: 20rem;
       border-radius: 10px;
       padding: 2rem;
-      background: black;
+      background: rgb(48, 47, 63);
       color: white;
       transition: all 0.5s ease-out;
       &:hover{
-         box-shadow: inset 0px 0px 17px 2px rgba(255, 255, 255, 0.5),
-        0px 0px 49px 6px rgba(255, 255, 255, 0.5);
+        //  box-shadow: inset 0px 0px 17px 2px rgba(255, 255, 255, 0.5),
+        // 0px 0px 49px 6px rgba(255, 255, 255, 0.5);
       }
       .stats {
         display: flex;
@@ -181,11 +203,8 @@ function getImageUrl (name: string | undefined) {
       }
     }
     img {
-      width: 300px;
+      width: 550px;
       transition: all 0.5s ease-out;
-      &:hover{
-       transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1.1, 1.1, 1.1)
-      }
     }
   }
 }
