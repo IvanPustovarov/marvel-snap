@@ -1,16 +1,35 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import { ref, watch } from 'vue';
+import type { Ref } from 'vue'
 import IconClose from './icons/IconClose.vue';
+import { useCardStore } from '@/stores/card';
+import type { Card } from '@/interfaces/Card';
+import { useRouter, useRoute } from 'vue-router'
+
+const store = useCardStore();
+const router = useRouter();
+const route = useRoute();
+
+console.log(route);
 
 const emit = defineEmits<{
   (e: 'show', isShow: boolean): void
 }>();
 
 const userSearch = ref('');
+const coincidenceArray: Ref<Card[]> = ref([]);
 
 watch(userSearch, (newUserSearch) => {
-  console.log(`newUserSearch is ${newUserSearch}`)
+  if(newUserSearch) {
+    coincidenceArray.value = store.cards.filter(item=> item.description.includes(newUserSearch));
+  } else {
+    coincidenceArray.value = [];
+  }
 });
+
+function goToCard (name: string) {
+  return router.push({ name: "card", params: { id: `${name}` } });
+}
 
 </script>
 
@@ -29,9 +48,22 @@ watch(userSearch, (newUserSearch) => {
         placeholder="Введите название карты или локации"
       >
       <div class="search-result">
-        {{ userSearch ? userSearch : 'История поиска пуста' }}
+            <div
+              v-if="!coincidenceArray.length"
+              class="no-coincidence"
+              >
+                Совпадений не найдено
+              </div>
+            <div
+              v-for="item in coincidenceArray"
+              @click="goToCard(item.name)"
+              class="search-item"
+            >
+            {{ item.name }}
+            </div>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -66,8 +98,8 @@ watch(userSearch, (newUserSearch) => {
     & .search-input-container{
       display: flex;
       flex-direction: column;
-
       & .search-input{
+        margin-bottom: 1rem;
         height: 30px;
         font-size: 20px;
         padding: 4px;
@@ -84,11 +116,39 @@ watch(userSearch, (newUserSearch) => {
       }
 
       & .search-result{
+        overflow-y: auto;
         display: flex;
-        justify-content: center;
-        padding-top: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 14px;
         min-height: 80px;
         max-height: 500px;
+
+        & .no-coincidence{
+          display: flex;
+          justify-content: center;
+        }
+
+        & .search-item{
+          cursor: pointer;
+          border: 1px solid white;
+          margin: 0 10px 10px 0;
+          padding: 8px;
+          border-radius: 3px;
+
+          &:hover{
+            background: linear-gradient(
+                    180deg,
+                    rgb(76, 47, 123),
+                    rgb(24, 6, 66)
+                );
+            background-size: 400% 400%;
+          }
+        }
+
+        &::-webkit-scrollbar-track {
+          border-radius: 6px;
+        }
       }
     }
 

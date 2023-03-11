@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import type { Card } from '@/interfaces/Card';
 import { useCardStore } from '@/stores/card';
+import { watch, ref } from 'vue';
+import type { Ref } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute();
@@ -9,7 +12,14 @@ function findCard () {
     return store.getCard(route.params.id.toString())
 }
 
-const card = findCard();
+watch(route, (newRoute) => {
+  if(newRoute) {
+    card.value = findCard();
+  }
+});
+
+const card: Ref<Card|undefined> = ref();
+card.value = findCard();
 
 function pool() {
       const poolRus: Record <number, string> = {
@@ -22,12 +32,12 @@ function pool() {
         6: '5 пул',
         7: '6 пул'
       }
-      if(card) return poolRus[card.pool];
+      if(card.value) return poolRus[card?.value?.pool];
       return undefined;
 }
 
 function release () {
-    return card?.release ? "Выпущена" : "Не выпущена";
+    return card?.value?.release ? "Выпущена" : "Не выпущена";
 }
 
 function getImageUrl (name: string | undefined) {

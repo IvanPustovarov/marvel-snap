@@ -1,9 +1,42 @@
 <script setup lang="ts">
-import { RouterLink } from "vue-router"
-import { ref } from 'vue'
+import { RouterLink, useRoute, useRouter } from "vue-router"
+import { ref, watch } from 'vue'
 import { onClickOutside } from '@vueuse/core'
 import ModalSearch from "@/components/ModalSearch.vue"
 
+
+const route = useRoute();
+const router = useRouter();
+
+const paths = ref([
+  {
+    link: '/',
+    text: 'Главная',
+    isActive: false
+  },
+  {
+    link: '/cards',
+    text: 'Карты',
+    isActive: false
+  },
+  {
+    link: '/locations',
+    text: 'Локации',
+    isActive: false
+  },
+  {
+    link: '/about',
+    text: 'О нас',
+    isActive: false
+  },
+
+])
+
+watch(route, (newRoute) => {
+  if(newRoute) {
+    paths.value.map(item=> item.link === newRoute.path ? item.isActive = true : item.isActive = false);
+  }
+});
 
 const modal = ref(false);
 const modalRef = ref(null);
@@ -16,6 +49,10 @@ onClickOutside(
 
 function changeShow () {
   modal.value = false;
+};
+
+function goToPage (path: string) {
+  return router.push(`${path}`)
 }
 
 </script>
@@ -29,17 +66,14 @@ function changeShow () {
           </RouterLink>
         </div>
       <div class="links">
-            <div class="item">
-              <RouterLink to="/">Главная</RouterLink>
-            </div>
-            <div class="item">
-              <RouterLink to="/cards">Карты</RouterLink>
-            </div>
-            <div class="item">
-              <RouterLink to="/locations">Локации</RouterLink>
-            </div>
-            <div class="item">
-              <RouterLink to="/about">О нас</RouterLink>
+            <div
+              v-for="item in paths"
+              :key="item.link"
+              class="item"
+              :class="item.isActive ? 'active-item': ''"
+              @click="goToPage(item.link)"
+            >
+              {{ item.text }}
             </div>
             <div class="item" @click="modal = true">
               <span>Поиск</span>
@@ -66,10 +100,7 @@ function changeShow () {
       font-style: italic;
       font-weight: 600;
       color: #ffffff;
-
-      &.router-link-exact-active {
-        color: #ffffff;
-      }
+      text-decoration: none;
     }
     .logo-img {
       position: absolute;
@@ -79,6 +110,7 @@ function changeShow () {
       height: 5rem;
       img {
         width: 80%;
+        transition: all 0.3s ease-out;
         &:hover {
           transform: perspective(1000px) rotateX(0deg) rotateY(0deg)
             scale3d(1.035, 1.035, 1.035);
@@ -90,25 +122,29 @@ function changeShow () {
       display: flex;
       padding: 0 0 0 10rem;
       align-items: center;
+
+      .active-item{
+        background: linear-gradient(
+                        180deg,
+                        rgb(133, 96, 185),
+                        rgb(38, 24, 70)
+                    );
+        background-size: 200% 200%;
+        color: rgb(28, 9, 54) !important;
+      }
       .item {
         display: flex;
         padding: 0 0 0 0.3rem;
-        height: 100%;
         height: 5rem;
         align-items: center;
         font-size: 18px;
-        a, span {
-          cursor: pointer;
-          text-decoration: none;
-          padding: 2.5rem 1rem 2.5rem 0;
-        }
+        cursor: pointer;
+        font-style: italic;
+        font-weight: 600;
+        color: #ffffff;
+        padding-right: 1rem;
         &:hover {
-          background: linear-gradient(
-                        180deg,
-                        rgba(128, 70, 222, 0.9),
-                        rgb(35, 14, 83)
-                    );
-          background-size: 200% 200%;
+          color: rgb(133, 96, 185);
         }
       }
 
@@ -118,6 +154,7 @@ function changeShow () {
         top: 50%;
         transform: translate(-50%, -50%);
         width: 420px;
+        max-width: 500px;
         max-width: 100%;
         z-index: 10;
       }

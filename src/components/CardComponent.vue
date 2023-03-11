@@ -52,6 +52,18 @@ function editDescription(text: string): string | null {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    transition: all 0.3s ease-out;
+     &:hover{
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1.035, 1.035, 1.035);
+        .description{
+          color: black;
+          background: white;
+          outline: 4px solid black;
+          transition:  all 0.5s ease-out;
+        }
+
+      }
     .description {
       display: flex;
       flex-direction: column;
@@ -67,19 +79,9 @@ function editDescription(text: string): string | null {
         font-size: 17px;
         font-weight: 600;
       }
-      &:hover {
-        color: black;
-        background: white;
-        outline: 4px solid black;
-        transition:  all 0.5s ease-out;
-      }
     }
     img {
       width: 300px;
-      transition: all 0.3s ease-out;
-      &:hover{
-        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1.035, 1.035, 1.035);
-      }
     }
   }
 }
