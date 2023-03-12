@@ -46,7 +46,7 @@ import NavigtionView from '@/views/NavigtionView.vue';
 body {
   display: flex;
   justify-content: center;
-  background: center repeat url('./assets/img/back.jpg');
+  background: center url('./assets/img/fon2.png');
   flex-direction: column;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
