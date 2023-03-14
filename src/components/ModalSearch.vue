@@ -1,16 +1,14 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue';
-import type { Ref } from 'vue'
+import type { Ref } from 'vue';
 import IconClose from './icons/IconClose.vue';
 import { useCardStore } from '@/stores/card';
 import type { Card } from '@/interfaces/Card';
-import { useRouter, useRoute } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router';
 
 const store = useCardStore();
 const router = useRouter();
 const route = useRoute();
-
-console.log(route);
 
 const emit = defineEmits<{
   (e: 'show', isShow: boolean): void
@@ -21,14 +19,22 @@ const coincidenceArray: Ref<Card[]> = ref([]);
 
 watch(userSearch, (newUserSearch) => {
   if(newUserSearch) {
-    coincidenceArray.value = store.cards.filter(item=> item.description.includes(newUserSearch));
+    coincidenceArray.value = store.cards.filter(item=> item.name.includes(newUserSearch) || item.description.includes(newUserSearch));
   } else {
     coincidenceArray.value = [];
   }
 });
 
+function clearSearch () {
+  if(userSearch.value) userSearch.value = '';
+}
+
 function goToCard (name: string) {
   return router.push({ name: "card", params: { id: `${name}` } });
+}
+
+function getImageUrl (name: string | undefined) {
+      return new URL(`../assets/cards/${name}.webp`, import.meta.url).href
 }
 
 </script>
@@ -41,12 +47,15 @@ function goToCard (name: string) {
       </span>
     </div>
     <div class="search-input-container">
-      <input
-        type="text"
-        v-model="userSearch"
-        class="search-input"
-        placeholder="Введите название карты или локации"
-      >
+        <input
+          type="text"
+          v-model="userSearch"
+          class="search-input"
+          placeholder="Введите название карты или локации"
+        >
+        <span class="clear-input" @click="clearSearch">
+          <IconClose />
+        </span>
       <div class="search-result">
             <div
               v-if="!coincidenceArray.length"
@@ -60,6 +69,7 @@ function goToCard (name: string) {
               class="search-item"
             >
             {{ item.name }}
+             <img :src="getImageUrl(item?.name)" alt="card"  class="img-card"/>
             </div>
       </div>
     </div>
@@ -98,6 +108,19 @@ function goToCard (name: string) {
     & .search-input-container{
       display: flex;
       flex-direction: column;
+
+      & .clear-input{
+        cursor: pointer;
+        width: 20px;
+        position: absolute;
+        right: 25px;
+        top: 53px;
+        transition: all 0.3s ease-out;
+        &:hover{
+            transform: rotate(90deg);
+            top: 50px;
+        }
+      }
       & .search-input{
         margin-bottom: 1rem;
         height: 30px;
@@ -135,6 +158,16 @@ function goToCard (name: string) {
           margin: 0 10px 10px 0;
           padding: 8px;
           border-radius: 3px;
+          position: relative;
+
+          & .img-card{
+            max-width: 150px;
+            position: absolute;
+            top: -10px;
+            display: none;
+            right: 0px;
+            z-index: 1;
+          }
 
           &:hover{
             background: linear-gradient(
@@ -143,6 +176,9 @@ function goToCard (name: string) {
                     rgb(24, 6, 66)
                 );
             background-size: 400% 400%;
+             .img-card{
+              display: block;
+            }
           }
         }
 

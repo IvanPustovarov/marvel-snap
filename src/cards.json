@@ -12,7 +12,8 @@
     "noAbility": true,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "attuma",
@@ -27,7 +28,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "agent-coulson",
@@ -42,7 +44,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "adam-warlock",
@@ -57,7 +60,8 @@
     "noAbility": false,
     "draw": true,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "aero",
@@ -72,7 +76,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "agatha-harkness",
@@ -87,7 +92,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "agent-13",
@@ -102,7 +108,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "america-chavez",
@@ -117,7 +124,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "angel",
@@ -132,7 +140,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "angela",
@@ -147,7 +156,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "ant-man",
@@ -162,7 +172,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "apocalypse",
@@ -177,7 +188,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "armor",
@@ -192,7 +204,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "arnim-zola",
@@ -207,7 +220,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "baron-mordo",
@@ -222,7 +236,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "beast",
@@ -237,7 +252,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "bishop",
@@ -252,7 +268,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "bast",
@@ -267,7 +284,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "black-bolt",
@@ -282,7 +300,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "black-cat",
@@ -297,7 +316,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "black-panther",
@@ -312,7 +332,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "black-widow",
@@ -327,7 +348,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "blade",
@@ -342,7 +364,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "blue-marvel",
@@ -357,7 +380,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "brood",
@@ -372,7 +396,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "bucky-barnes",
@@ -387,7 +412,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "cable",
@@ -402,7 +428,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "captain-america",
@@ -417,7 +444,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "captain-marvel",
@@ -432,7 +460,8 @@
     "noAbility": false,
     "draw": true,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "carnage",
@@ -447,7 +476,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "cerebro",
@@ -462,7 +492,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "cloak",
@@ -477,7 +508,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "colleen-wing",
@@ -492,7 +524,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "colossus",
@@ -507,7 +540,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "cosmo",
@@ -522,7 +556,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "crossbones",
@@ -537,7 +572,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "crystal",
@@ -552,7 +588,8 @@
     "noAbility": false,
     "draw": true,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "cyclops",
@@ -567,7 +604,8 @@
     "noAbility": true,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "darkhawk",
@@ -582,7 +620,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "dazzler",
@@ -597,7 +636,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "dagger",
@@ -612,7 +652,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "daredevil",
@@ -627,7 +668,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "deadpool",
@@ -642,7 +684,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "death",
@@ -657,7 +700,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "deathlok",
@@ -672,7 +716,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "debrii",
@@ -687,7 +732,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "destroyer",
@@ -702,7 +748,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "devil-dinosaur",
@@ -717,7 +764,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "doctor-doom",
@@ -732,7 +780,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "doctor-octopus",
@@ -747,7 +796,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "doctor-strange",
@@ -762,7 +812,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "domino",
@@ -777,7 +828,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "dracula",
@@ -792,7 +844,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "drax",
@@ -807,7 +860,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "ebony-maw",
@@ -822,7 +876,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "electro",
@@ -837,7 +892,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "elektra",
@@ -852,7 +908,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "enchantress",
@@ -867,7 +924,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "falcon",
@@ -882,7 +940,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "forge",
@@ -897,7 +956,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "gambit",
@@ -912,7 +972,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "gamora",
@@ -927,7 +988,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "ghost-rider",
@@ -942,7 +1004,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "giganto",
@@ -957,7 +1020,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "ghost",
@@ -972,7 +1036,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "goose",
@@ -987,7 +1052,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "green-goblin",
@@ -1002,7 +1068,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "groot",
@@ -1017,7 +1084,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "helicarrier",
@@ -1032,7 +1100,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "hawkeye",
@@ -1047,7 +1116,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "hazmat",
@@ -1062,7 +1132,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "heimdall",
@@ -1077,7 +1148,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "hela",
@@ -1092,7 +1164,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "hellcow",
@@ -1107,7 +1180,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "hobgoblin",
@@ -1122,7 +1196,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "hulk-buster",
@@ -1137,7 +1212,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "hulk",
@@ -1152,7 +1228,8 @@
     "noAbility": true,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "human-torch",
@@ -1167,7 +1244,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "iceman",
@@ -1182,7 +1260,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "invisible-woman",
@@ -1197,7 +1276,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "iron-fist",
@@ -1212,7 +1292,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "iron-man",
@@ -1227,7 +1308,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "ironheart",
@@ -1242,7 +1324,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "jane-foster-mighty-thor",
@@ -1257,7 +1340,8 @@
     "noAbility": false,
     "draw": true,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "jessica-jones",
@@ -1272,7 +1356,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "jubilee",
@@ -1287,7 +1372,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "juggernaut",
@@ -1302,7 +1388,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "ka-zar",
@@ -1317,7 +1404,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "killmonger",
@@ -1332,7 +1420,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "knull",
@@ -1347,7 +1436,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "kitty-pryde",
@@ -1362,7 +1452,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "kingpin",
@@ -1377,7 +1468,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "klaw",
@@ -1392,7 +1484,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "korg",
@@ -1407,7 +1500,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "kraven",
@@ -1422,7 +1516,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "lady-sif",
@@ -1437,7 +1532,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "leader",
@@ -1452,7 +1548,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "hit-monkey",
@@ -1467,7 +1564,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "leech",
@@ -1482,7 +1580,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "lizard",
@@ -1497,7 +1596,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "lockjaw",
@@ -1512,7 +1612,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "luke-cage",
@@ -1527,7 +1628,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "modok",
@@ -1542,7 +1644,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "maria-hill",
@@ -1557,7 +1660,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "magik",
@@ -1572,7 +1676,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "magneto",
@@ -1587,7 +1692,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "mantis",
@@ -1602,7 +1708,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "maximus",
@@ -1617,7 +1724,8 @@
     "noAbility": false,
     "draw": true,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "medusa",
@@ -1632,7 +1740,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "miles-morales",
@@ -1647,7 +1756,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "mbaku",
@@ -1662,7 +1772,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "master-mold",
@@ -1677,7 +1788,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "mister-fantastic",
@@ -1692,7 +1804,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "mister-negative",
@@ -1707,7 +1820,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "mister-sinister",
@@ -1722,7 +1836,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "misty-knight",
@@ -1737,7 +1852,8 @@
     "noAbility": true,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "mojo",
@@ -1752,7 +1868,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "moon-girl",
@@ -1767,7 +1884,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "moon-knight",
@@ -1782,7 +1900,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "morbius",
@@ -1797,7 +1916,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "morph",
@@ -1812,7 +1932,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "multiple-man",
@@ -1827,7 +1948,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "mysterio",
@@ -1842,7 +1964,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "mystique",
@@ -1857,7 +1980,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "nakia",
@@ -1872,7 +1996,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "namor",
@@ -1887,7 +2012,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "nick-fury",
@@ -1902,7 +2028,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "nightcrawler",
@@ -1917,7 +2044,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "negasonic-teenage-warhead",
@@ -1932,7 +2060,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "nimrod",
@@ -1947,7 +2076,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "nova",
@@ -1962,7 +2092,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "odin",
@@ -1977,7 +2108,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "okoye",
@@ -1992,7 +2124,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "omega-red",
@@ -2007,7 +2140,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "orka",
@@ -2022,7 +2156,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "onslaught",
@@ -2037,7 +2172,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "patriot",
@@ -2052,7 +2188,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "polaris",
@@ -2067,7 +2204,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "professor-x",
@@ -2082,7 +2220,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "psylocke",
@@ -2097,7 +2236,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "punisher",
@@ -2112,7 +2252,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "quake",
@@ -2127,7 +2268,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "quicksilver",
@@ -2142,7 +2284,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "quinjet",
@@ -2157,7 +2300,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "red-skull",
@@ -2172,7 +2316,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "rescue",
@@ -2187,7 +2332,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "rhino",
@@ -2202,7 +2348,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "rocket-racoon",
@@ -2217,7 +2364,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "rockslide",
@@ -2232,7 +2380,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "rogue",
@@ -2247,7 +2396,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "ronan-the-accuser",
@@ -2262,7 +2412,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "shadow-king",
@@ -2277,7 +2428,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "stature",
@@ -2292,7 +2444,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "shanna",
@@ -2307,7 +2460,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "sauron",
@@ -2322,7 +2476,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "she-hulk",
@@ -2337,7 +2492,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "super-skrull",
@@ -2352,7 +2508,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "shuri",
@@ -2367,7 +2524,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "stegron",
@@ -2382,7 +2540,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": false
+    "release": false,
+    "name_ru": ""
   },
   {
     "name": "sentry",
@@ -2397,7 +2556,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "silver-surfer",
@@ -2412,7 +2572,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "sabretooth",
@@ -2427,7 +2588,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "sandman",
@@ -2442,7 +2604,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "scarlet-witch",
@@ -2457,7 +2620,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "scorpion",
@@ -2472,7 +2636,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "sentinel",
@@ -2487,7 +2652,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "sera",
@@ -2502,7 +2668,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "shang-chi",
@@ -2517,7 +2684,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "shocker",
@@ -2532,7 +2700,8 @@
     "noAbility": true,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "spectrum",
@@ -2547,7 +2716,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "spider-man",
@@ -2562,7 +2732,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "spider-woman",
@@ -2577,7 +2748,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "squirrel-girl",
@@ -2592,7 +2764,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "star-lord",
@@ -2607,7 +2780,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "storm",
@@ -2622,7 +2796,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "strong-guy",
@@ -2637,7 +2812,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "sunspot",
@@ -2652,7 +2828,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "swarm",
@@ -2667,7 +2844,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "sword-master",
@@ -2682,7 +2860,8 @@
     "noAbility": false,
     "draw": false,
     "discard": true,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "taskmaster",
@@ -2697,7 +2876,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "thanos",
@@ -2712,7 +2892,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "the-collector",
@@ -2727,7 +2908,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "the-hood",
@@ -2742,7 +2924,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "the-infinaut",
@@ -2757,7 +2940,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "the-thing",
@@ -2772,7 +2956,8 @@
     "noAbility": true,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "thor",
@@ -2787,7 +2972,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "typhoid-mary",
@@ -2802,7 +2988,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "titania",
@@ -2817,7 +3004,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "uatu",
@@ -2832,7 +3020,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "ultron",
@@ -2847,7 +3036,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "valkyrie",
@@ -2862,7 +3052,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "venom",
@@ -2877,7 +3068,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "viper",
@@ -2892,7 +3084,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "vision",
@@ -2907,7 +3100,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "vulture",
@@ -2922,7 +3116,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "warpath",
@@ -2937,7 +3132,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "wasp",
@@ -2952,7 +3148,8 @@
     "noAbility": true,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "wave",
@@ -2967,7 +3164,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "white-queen",
@@ -2982,7 +3180,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "white-tiger",
@@ -2997,7 +3196,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "wolfsbane",
@@ -3012,7 +3212,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "wolverine",
@@ -3027,7 +3228,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "wong",
@@ -3042,7 +3244,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "yellowjacket",
@@ -3057,7 +3260,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "yondu",
@@ -3072,7 +3276,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "zabu",
@@ -3087,7 +3292,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "zero",
@@ -3102,7 +3308,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "absorbing-man",
@@ -3117,7 +3324,8 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   },
   {
     "name": "galactus",
@@ -3132,6 +3340,7 @@
     "noAbility": false,
     "draw": false,
     "discard": false,
-    "release": true
+    "release": true,
+    "name_ru": ""
   }
 ]
