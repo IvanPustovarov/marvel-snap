@@ -167,10 +167,14 @@ function goToPage (path: string) {
           align-items: center;
           justify-content: space-between;
           cursor: pointer;
-          font-style: normal;
 
+          & span {
+            font-style: normal
+          }
+          transition: all 0.5s ease-in-out;
           &:hover{
-            svg {      
+            background-color: #681d7a;
+            svg {
               transform: rotate(90deg);
             }
           }
@@ -195,8 +199,8 @@ function goToPage (path: string) {
     }
   }
   .br {
-    height: 0.7rem;
-    background: linear-gradient(-45deg, #ed193b, #a98055, #f286e2, #681d7a);
+    height: 0.5rem;
+    background: linear-gradient(-45deg, #b819ed, #555ca9, #f286e2, #681d7a);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
   }
