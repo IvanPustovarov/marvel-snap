@@ -101,6 +101,10 @@ function getImageUrl (name: string | undefined) {
         cursor: pointer;
         & svg{
           fill: white;
+
+          &:hover{
+            fill: red
+          }
         }
       }
     }
@@ -115,10 +119,10 @@ function getImageUrl (name: string | undefined) {
         position: absolute;
         right: 25px;
         top: 53px;
-        transition: all 0.3s ease-out;
+        transition: all 0.5s ease-in-out;
         &:hover{
             transform: rotate(90deg);
-            top: 50px;
+            top: 51px;
         }
       }
       & .search-input{
@@ -126,6 +130,7 @@ function getImageUrl (name: string | undefined) {
         height: 30px;
         font-size: 20px;
         padding: 4px;
+        padding-right: 33px;
         outline: 2px solid rgb(65, 31, 112);
         border-radius: 5px;
 

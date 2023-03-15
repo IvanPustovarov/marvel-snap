@@ -3,6 +3,7 @@ import { RouterLink, useRoute, useRouter } from "vue-router"
 import { ref, watch } from 'vue'
 import { onClickOutside } from '@vueuse/core'
 import ModalSearch from "@/components/ModalSearch.vue"
+import IconSearch from '@/components/icons/IconSearch.vue';
 
 
 const route = useRoute();
@@ -75,8 +76,9 @@ function goToPage (path: string) {
             >
               {{ item.text }}
             </div>
-            <div class="item" @click="modal = true">
+            <div class="search" @click="modal = true">
               <span>Поиск</span>
+              <IconSearch />
             </div>
             <div v-if="modal" ref="modalRef" class="modal">
                 <ModalSearch @show='changeShow' />
@@ -122,42 +124,74 @@ function goToPage (path: string) {
       display: flex;
       padding: 0 0 0 10rem;
       align-items: center;
+      width: 100%;
 
-      .active-item{
-        background: linear-gradient(
-                        180deg,
-                        rgb(133, 96, 185),
-                        rgb(38, 24, 70)
-                    );
-        background-size: 200% 200%;
-        color: rgb(28, 9, 54) !important;
+      div:last-of-type{
+        margin-left: auto;
       }
-      .item {
-        display: flex;
-        padding: 0 0 0 0.3rem;
-        height: 5rem;
-        align-items: center;
-        font-size: 18px;
-        cursor: pointer;
-        font-style: italic;
-        font-weight: 600;
-        color: #ffffff;
-        padding-right: 1rem;
-        &:hover {
-          color: rgb(133, 96, 185);
+
+        .active-item{
+          background: linear-gradient(
+                          180deg,
+                          rgb(133, 96, 185),
+                          rgb(38, 24, 70)
+                      );
+          background-size: 200% 200%;
+          color: rgb(28, 9, 54) !important;
         }
-      }
+        .item {
+          display: flex;
+          padding: 0 0 0 0.3rem;
+          height: 5rem;
+          align-items: center;
+          font-size: 18px;
+          cursor: pointer;
+          font-style: italic;
+          font-weight: 600;
+          color: #ffffff;
+          padding-right: 1rem;
+          &:hover {
+            color: rgb(133, 96, 185);
+          }
+        }
 
-      .modal{
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 420px;
-        max-width: 500px;
-        max-width: 100%;
-        z-index: 10;
-      }
+        .search{
+          margin-left: auto;
+          margin-right: 20px;
+          background-color: rgb(133, 96, 185);
+          border-radius: 5px;
+          min-height: 50px;
+          min-width: 200px;
+          padding: 0 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          font-style: normal;
+
+          &:hover{
+            svg {      
+              transform: rotate(90deg);
+            }
+          }
+
+          svg{
+            fill: white;
+            margin-left: 10px;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+
+        .modal{
+          position: fixed;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 420px;
+          max-width: 500px;
+          max-width: 100%;
+          z-index: 10;
+        }
     }
   }
   .br {
