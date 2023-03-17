@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Card } from '@/interfaces/Card';
 import { useRouter, useRoute } from 'vue-router'
-import CardView from '@/views/CardView.vue';
+
 
 const router = useRouter();
 const props = defineProps<{

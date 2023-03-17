@@ -99,7 +99,7 @@ function goToPage (path: string) {
     flex-direction: row;
     position: relative;
     a, span {
-      font-style: italic;
+      font-style: normal;
       font-weight: 600;
       color: #ffffff;
       text-decoration: none;
@@ -141,15 +141,13 @@ function goToPage (path: string) {
         }
         .item {
           display: flex;
-          padding: 0 0 0 0.3rem;
-          height: 5rem;
+          padding: 2rem 1rem;
           align-items: center;
           font-size: 18px;
           cursor: pointer;
-          font-style: italic;
+          font-style: normal;
           font-weight: 600;
           color: #ffffff;
-          padding-right: 1rem;
           &:hover {
             color: rgb(133, 96, 185);
           }
