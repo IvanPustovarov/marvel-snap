@@ -1,34 +1,157 @@
 <script setup lang="ts">
 import CardComponent from '@/components/CardComponent.vue';
+import { ref, reactive } from 'vue';
 import { useCardStore } from '@/stores/card';
 
 const store = useCardStore();
+
+const filters = reactive({
+  power: null,
+  cost: null,
+  pool: null,
+  onReveal: false,
+  ongoing: false,
+  move: false,
+  destroy: false,
+  noAbility: false,
+  draw: false,
+  discard: false,
+  release: true,
+});
+
+const pools = [
+  {
+    value: 'first'
+  },
+  {
+    value: 'second'
+  },
+  {
+    value: 'third'
+  },
+  {
+    value: 'fourth'
+  },
+  {
+    value: 'fifth'
+  },
+  {
+    value: 'sixth'
+  },
+  {
+    value: 'seventh'
+  },
+  {
+    value: 'eighth'
+  }
+]
+
+const powers = [
+  {
+    value: 'first'
+  },
+  {
+    value: 'second'
+  },
+  {
+    value: 'third'
+  },
+  {
+    value: 'fourth'
+  },
+  {
+    value: 'fifth'
+  },
+  {
+    value: 'sixth'
+  },
+  {
+    value: 'seventh'
+  },
+  {
+    value: 'eighth'
+  }
+]
+
+const costs = [
+  {
+    value: 'first'
+  },
+  {
+    value: 'second'
+  },
+  {
+    value: 'third'
+  },
+  {
+    value: 'fourth'
+  },
+  {
+    value: 'fifth'
+  },
+  {
+    value: 'sixth'
+  },
+  {
+    value: 'seventh'
+  },
+  {
+    value: 'eighth'
+  }
+]
 </script>
 
 <template>
   <div class="filters-container">
     <div class="filter-item-container">
-      <label for="">dsdasd</label>
-      <input type="checkbox" name="" id="">
+      <label for="">Сила</label>
+      <input
+        v-for="item in powers"
+        type="radio"
+        v-model="filters.power"
+        :value="item.value"
+      >
     </div>
 
     <div class="filter-item-container">
-      <label for="">dsdasd</label>
-      <input type="checkbox" name="" id="">
+      <label for="">Стоимость</label>
+     <input
+        v-for="item in costs"
+        type="radio"
+        v-model="filters.cost"
+        :value="item.value"
+      >
     </div>
 
     <div class="filter-item-container">
-      <label for="">dsdasd</label>
-      <input type="checkbox" name="" id="">
+      <label for="">Пул</label>
+      <input
+        v-for="item in pools"
+        type="radio"
+        v-model="filters.pool"
+        :value="item.value"
+      >
+    </div>
+
+    <div class="filter-item-container text-checkbox">
+      <div>
+        <label for="">При раскрытии</label>
+        <input type="checkbox" v-model="filters.onReveal">
+      </div>
+
+      <div>
+        <label for="">Продолжительный эффект</label>
+        <input type="checkbox" v-model="filters.ongoing">
+      </div>
     </div>
   </div>
-    <div class="container-cards">
-        <CardComponent
-          v-for="card in store.cards"
-          :key="card.name"
-          :card="card"
-        />
-    </div>
+  <div class="container-cards">
+      <CardComponent
+        v-for="card in store.cards"
+        :key="card.name"
+        :card="card"
+      />
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -39,14 +162,18 @@ const store = useCardStore();
   background-color: rgb(92, 65, 30);
   min-width: 300px;
   align-self: flex-start;
-  margin: 10px 20px;
+  margin: 20px 20px;
   padding: 10px;
   display: flex;
   flex-direction: column;
 
+  & .text-checkbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   & .filter-item-container{
     display: flex;
-    align-items: center;
   }
 }
 .container-cards {
@@ -54,7 +181,6 @@ const store = useCardStore();
   flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 2rem;
   justify-content: center;
 }
 </style>
