@@ -1,9 +1,24 @@
 <script setup lang="ts">
 import CardComponent from '@/components/CardComponent.vue';
-import { ref, reactive } from 'vue';
+import { ref, reactive, watch } from 'vue';
+import type { Ref } from 'vue';
 import { useCardStore } from '@/stores/card';
 
-const store = useCardStore();
+const store = useCardStore(); 
+
+// interface filter {
+//   power: null,
+//   cost: null,
+//   pool: null,
+//   [key: string]: boolean | string,
+//   ongoing: boolean | string,
+//   move: boolean | string,
+//   destroy: boolean | string,
+//   noAbility: boolean | string,
+//   draw: boolean | string,
+//   discard: boolean | string,
+//   release: boolean | string,
+// }
 
 const filters = reactive({
   power: null,
@@ -18,6 +33,8 @@ const filters = reactive({
   discard: false,
   release: true,
 });
+
+const selectedAbility = ref('');
 
 const pools = [
   {
@@ -99,6 +116,38 @@ const costs = [
     value: 'eighth'
   }
 ]
+
+const abilityFilters = [
+  {
+    text: 'Move', value: 'move'
+  },
+  {
+    text: 'Destroy', value: 'destroy'
+  },
+  {
+    text: 'No Ability', value: 'noAbility'
+  },
+  {
+    text: 'Draw', value: 'draw'
+  },
+  {
+    text: 'Discard', value: 'discard'
+  }
+]
+
+// watch(selectedAbility, (newSelectedAbility) => {
+//   if(newSelectedAbility) {
+//     console.log(newSelectedAbility)
+//     filters[selectedAbility]
+//   }
+// });
+
+
+watch(filters, (newFilters) => {
+  console.log(newFilters);
+});
+
+
 </script>
 
 <template>
@@ -133,6 +182,15 @@ const costs = [
       >
     </div>
 
+    <div class="filter-item-container">
+      <label for="">Абилки</label>
+      <select v-model="selectedAbility">
+        <option v-for="option in abilityFilters" :value="option.value">
+          {{ option.text }}
+        </option>
+      </select>
+    </div>
+
     <div class="filter-item-container text-checkbox">
       <div>
         <label for="">При раскрытии</label>
@@ -142,6 +200,11 @@ const costs = [
       <div>
         <label for="">Продолжительный эффект</label>
         <input type="checkbox" v-model="filters.ongoing">
+      </div>
+
+      <div>
+        <label for="">В игре:</label>
+        <input type="checkbox" v-model="filters.release">
       </div>
     </div>
   </div>
@@ -159,7 +222,7 @@ const costs = [
 .filters-container{
   min-height: 100px;
   border-radius: 4px;
-  background-color: rgb(92, 65, 30);
+  background-color: rgb(48, 47, 63);
   min-width: 300px;
   align-self: flex-start;
   margin: 20px 20px;
