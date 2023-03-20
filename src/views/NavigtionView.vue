@@ -94,7 +94,15 @@ function goToPage (path: string) {
   width: 100%;
   min-height: 5rem;
   nav {
-    background-color: rgb(27, 30, 41);
+    // background-color: rgb(27, 30, 41);
+    background: linear-gradient(
+                          180deg,
+                          rgba(133, 96, 185, 0.3),
+                          rgba(0, 0, 0, 0.1)
+                          
+                      );
+    background-size: 200% 200%;
+    //background-color: inherit;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -159,21 +167,33 @@ function goToPage (path: string) {
           background-color: rgb(133, 96, 185);
           border-radius: 5px;
           min-height: 50px;
-          min-width: 200px;
+          min-width: 50px;
           padding: 0 10px;
           display: flex;
           align-items: center;
           justify-content: space-between;
           cursor: pointer;
 
+          & svg{
+            padding-left: 2px;
+          }
+
           & span {
-            font-style: normal
+            position: absolute;
+            font-style: normal;
+            color: rgb(133, 96, 185);
           }
           transition: all 0.5s ease-in-out;
           &:hover{
             background-color: #681d7a;
+            min-width: 200px;
+            & span {
+              display: flex;
+              color: white;
+            }
             svg {
               transform: rotate(90deg);
+              margin-left: auto;
             }
           }
 
@@ -197,7 +217,7 @@ function goToPage (path: string) {
     }
   }
   .br {
-    height: 0.5rem;
+    height: 0.3rem;
     background: linear-gradient(-45deg, #b819ed, #555ca9, #f286e2, #681d7a);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
