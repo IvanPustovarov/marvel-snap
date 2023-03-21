@@ -3,13 +3,14 @@ import CardComponent from '@/components/CardComponent.vue';
 import { ref, reactive, watch } from 'vue';
 import type { Ref } from 'vue';
 import { useCardStore } from '@/stores/card';
+import type { Card } from '@/interfaces/Card';
 
 const store = useCardStore(); 
 
 interface filter {
-  power?: null,
-  cost?: null,
-  pool?: null,
+  power: string,
+  cost: string,
+  pool: string,
   onReveal: boolean | string,
   ongoing: boolean | string,
   move: boolean | string,
@@ -21,9 +22,9 @@ interface filter {
 }
 
 const filters: filter = reactive({
-  power: null,
-  cost: null,
-  pool: null,
+  power: '',
+  cost: '',
+  pool: '',
   onReveal: false,
   ongoing: false,
   move: false,
@@ -35,6 +36,7 @@ const filters: filter = reactive({
 });
 
 const selectedAbility = ref('');
+const filteredCardArray: Ref<Card[]> = ref([]);
 
 const pools = [
   {
@@ -149,7 +151,13 @@ watch(selectedAbility, (newSelectedAbility) => {
 
 
 watch(filters, (newFilters) => {
-  console.log(newFilters);
+  filteredCardArray.value = store.cards.filter(function(item) {
+    for(const key in newFilters) {
+      if((newFilters as any)[key] === (item as any)[key]) {
+        return filteredCardArray.value
+      }
+    }
+  })
 });
 
 
@@ -214,11 +222,18 @@ watch(filters, (newFilters) => {
     </div>
   </div>
   <div class="container-cards">
-      <CardComponent
-        v-for="card in store.cards"
+      <CardComponent 
+        v-if="filteredCardArray.length"
+        v-for="card in filteredCardArray"
         :key="card.name"
         :card="card"
       />
+      <!-- <CardComponent
+        v-if="!filteredCardArray.length"
+        v-for="card in store.cards"
+        :key="card.name"
+        :card="card"
+      /> -->
   </div>
 </template>
 
