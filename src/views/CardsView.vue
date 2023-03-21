@@ -6,21 +6,21 @@ import { useCardStore } from '@/stores/card';
 
 const store = useCardStore(); 
 
-// interface filter {
-//   power: null,
-//   cost: null,
-//   pool: null,
-//   [key: string]: boolean | string,
-//   ongoing: boolean | string,
-//   move: boolean | string,
-//   destroy: boolean | string,
-//   noAbility: boolean | string,
-//   draw: boolean | string,
-//   discard: boolean | string,
-//   release: boolean | string,
-// }
+interface filter {
+  power?: null,
+  cost?: null,
+  pool?: null,
+  onReveal: boolean | string,
+  ongoing: boolean | string,
+  move: boolean | string,
+  destroy: boolean | string,
+  noAbility: boolean | string,
+  draw: boolean | string,
+  discard: boolean | string,
+  release: boolean | string,
+}
 
-const filters = reactive({
+const filters: filter = reactive({
   power: null,
   cost: null,
   pool: null,
@@ -135,12 +135,17 @@ const abilityFilters = [
   }
 ]
 
-// watch(selectedAbility, (newSelectedAbility) => {
-//   if(newSelectedAbility) {
-//     console.log(newSelectedAbility)
-//     filters[selectedAbility]
-//   }
-// });
+watch(selectedAbility, (newSelectedAbility) => {
+    (filters as any)[newSelectedAbility] = true;
+
+    for (let index = 0; index < abilityFilters.length; index++) {
+      const filterKey = abilityFilters[index];
+      if(filterKey.value != newSelectedAbility) {
+        (filters as any)[filterKey.value] = false;
+      }
+    }
+
+});
 
 
 watch(filters, (newFilters) => {
