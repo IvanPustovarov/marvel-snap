@@ -38,6 +38,8 @@ const filters: filter = reactive({
 const selectedAbility = ref('');
 const filteredCardArray: Ref<Card[]> = ref([]);
 
+acceptFilters(filters);
+
 const pools = [
    {
     value: 1
@@ -151,26 +153,13 @@ watch(selectedAbility, (newSelectedAbility) => {
 
 
 watch(filters, (newFilters) => {
- // console.log(newFilters)
   acceptFilters(newFilters);
-    // filteredCardArray.value = store.cards.filter((item) =>
-    // (item as  any).power === newFilters.power &&
-    // (item as  any).cost === newFilters.cost &&
-    // (item as  any).pool === newFilters.pool &&
-    // (item as  any).onReveal === newFilters.onReveal &&
-    // (item as  any).ongoing === newFilters.ongoing &&
-    // (item as  any).move === newFilters.move &&
-    // (item as  any).destroy === newFilters.destroy &&
-    // (item as  any).noAbility === newFilters.noAbility &&
-    // (item as  any).draw === newFilters.draw &&
-    // (item as  any).discard === newFilters.discard &&
-    // (item as  any).release === newFilters.release
-    // );
-    console.log(filteredCardArray.value);
 });
 
 function acceptFilters (filtersObj: filter) {
   const localObjToFilter = {};
+  const resultSet = new Set();
+  let flatted: any = [];
   for (const key in filtersObj) {
     if (Object.prototype.hasOwnProperty.call(filtersObj, key)) {
       const value = filtersObj[(key as keyof filter)];
@@ -185,12 +174,22 @@ function acceptFilters (filtersObj: filter) {
     }
   }
 
+  //console.log(localObjToFilter);
+
   for (const key in localObjToFilter) {
     if (Object.prototype.hasOwnProperty.call(localObjToFilter, key)) {
       const value = (localObjToFilter as any)[key];
-      filteredCardArray.value = store.cards.filter((item)=> item[key as keyof Card] === (localObjToFilter as any)[key])
+      const result = store.cards.filter((item)=> item[key as keyof Card] === value);
+      resultSet.add(result);
+      flatted = ([...resultSet].flatMap(num => num));
+      console.log(filteredCardArray.value);
+      //console.log(resultSet);
+      // filteredCardArray.value = [...new Set(result.filter((x) => resultSet.has(x)))];
+      //console.log(filteredCardArray.value);
     }
   }
+
+  (filteredCardArray.value as any) = flatted.filter((value: any, index: any, array: any) => array.indexOf(value) === index);
 }
 
 function resetFiltes() {
@@ -276,7 +275,7 @@ function resetFiltes() {
         :key="card.name"
         :card="card"
       />
-      <!-- <div v-if="!filteredCardArray.length">Нет совпадений с фильтрами :(</div> -->
+      <div v-if="!filteredCardArray.length">Нет совпадений с фильтрами :(</div>
       <!-- <CardComponent
         v-if="!filteredCardArray.length"
         v-for="card in store.cards"
