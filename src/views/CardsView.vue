@@ -5,12 +5,12 @@ import type { Ref } from 'vue';
 import { useCardStore } from '@/stores/card';
 import type { Card } from '@/interfaces/Card';
 
-const store = useCardStore(); 
+const store = useCardStore();
 
 interface filter {
-  power: string,
-  cost: string,
-  pool: string,
+  power?: null,
+  cost?: null,
+  pool?: null,
   onReveal: boolean | string,
   ongoing: boolean | string,
   move: boolean | string,
@@ -22,9 +22,9 @@ interface filter {
 }
 
 const filters: filter = reactive({
-  power: '',
-  cost: '',
-  pool: '',
+  power: null,
+  cost: null,
+  pool: null,
   onReveal: false,
   ongoing: false,
   move: false,
@@ -39,83 +39,83 @@ const selectedAbility = ref('');
 const filteredCardArray: Ref<Card[]> = ref([]);
 
 const pools = [
-  {
-    value: 'first'
+   {
+    value: 1
   },
   {
-    value: 'second'
+    value: 2
   },
   {
-    value: 'third'
+    value: 3
   },
   {
-    value: 'fourth'
+    value: 4
   },
   {
-    value: 'fifth'
+    value: 5
   },
   {
-    value: 'sixth'
+    value: 6
   },
   {
-    value: 'seventh'
+    value: 7
   },
   {
-    value: 'eighth'
+    value: 8
   }
 ]
 
 const powers = [
-  {
-    value: 'first'
+   {
+    value: 1
   },
   {
-    value: 'second'
+    value: 2
   },
   {
-    value: 'third'
+    value: 3
   },
   {
-    value: 'fourth'
+    value: 4
   },
   {
-    value: 'fifth'
+    value: 5
   },
   {
-    value: 'sixth'
+    value: 6
   },
   {
-    value: 'seventh'
+    value: 7
   },
   {
-    value: 'eighth'
+    value: 8
   }
 ]
 
 const costs = [
   {
-    value: 'first'
+    value: 1
   },
   {
-    value: 'second'
+    value: 2
   },
   {
-    value: 'third'
+    value: 3
   },
   {
-    value: 'fourth'
+    value: 4
   },
   {
-    value: 'fifth'
+    value: 5
   },
   {
-    value: 'sixth'
+    value: 6
   },
   {
-    value: 'seventh'
+    value: 7
   },
   {
-    value: 'eighth'
+    value: 8
   }
 ]
 
@@ -151,14 +151,61 @@ watch(selectedAbility, (newSelectedAbility) => {
 
 
 watch(filters, (newFilters) => {
-  filteredCardArray.value = store.cards.filter(function(item) {
-    for(const key in newFilters) {
-      if((newFilters as any)[key] === (item as any)[key]) {
-        return filteredCardArray.value
+ // console.log(newFilters)
+  acceptFilters(newFilters);
+    // filteredCardArray.value = store.cards.filter((item) =>
+    // (item as  any).power === newFilters.power &&
+    // (item as  any).cost === newFilters.cost &&
+    // (item as  any).pool === newFilters.pool &&
+    // (item as  any).onReveal === newFilters.onReveal &&
+    // (item as  any).ongoing === newFilters.ongoing &&
+    // (item as  any).move === newFilters.move &&
+    // (item as  any).destroy === newFilters.destroy &&
+    // (item as  any).noAbility === newFilters.noAbility &&
+    // (item as  any).draw === newFilters.draw &&
+    // (item as  any).discard === newFilters.discard &&
+    // (item as  any).release === newFilters.release
+    // );
+    console.log(filteredCardArray.value);
+});
+
+function acceptFilters (filtersObj: filter) {
+  const localObjToFilter = {};
+  for (const key in filtersObj) {
+    if (Object.prototype.hasOwnProperty.call(filtersObj, key)) {
+      const value = filtersObj[(key as keyof filter)];
+      if(value) {
+        Object.defineProperty(localObjToFilter, key, {
+          value: value,
+          writable: true,
+          enumerable: true,
+          configurable: true
+        });
       }
     }
-  })
-});
+  }
+
+  for (const key in localObjToFilter) {
+    if (Object.prototype.hasOwnProperty.call(localObjToFilter, key)) {
+      const value = (localObjToFilter as any)[key];
+      filteredCardArray.value = store.cards.filter((item)=> item[key as keyof Card] === (localObjToFilter as any)[key])
+    }
+  }
+}
+
+function resetFiltes() {
+  filters.cost = null;
+  filters.power = null;
+  filters.pool = null;
+  filters.onReveal = false;
+  filters.ongoing = false;
+  filters.move = false;
+  filters.destroy = false;
+  filters.noAbility = false;
+  filters.draw = false;
+  filters.discard = false;
+  filters.release = true;
+}
 
 
 </script>
@@ -219,15 +266,17 @@ watch(filters, (newFilters) => {
         <label for="">В игре:</label>
         <input type="checkbox" v-model="filters.release">
       </div>
+
+      <button @click="resetFiltes">Сбросить фильтры</button>
     </div>
   </div>
   <div class="container-cards">
-      <CardComponent 
-        v-if="filteredCardArray.length"
+      <CardComponent
         v-for="card in filteredCardArray"
         :key="card.name"
         :card="card"
       />
+      <!-- <div v-if="!filteredCardArray.length">Нет совпадений с фильтрами :(</div> -->
       <!-- <CardComponent
         v-if="!filteredCardArray.length"
         v-for="card in store.cards"
