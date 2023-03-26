@@ -13,7 +13,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Мерзость/Абоминейшн"
   },
   {
     "name": "attuma",
@@ -29,7 +29,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Аттума"
   },
   {
     "name": "agent-coulson",
@@ -45,7 +45,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Агент Колсон/Колсон"
   },
   {
     "name": "adam-warlock",
@@ -61,7 +61,7 @@
     "draw": true,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Адам Уорлок/Адам Варлок"
   },
   {
     "name": "aero",
@@ -77,7 +77,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Аэро"
   },
   {
     "name": "agatha-harkness",
@@ -93,7 +93,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Агата"
   },
   {
     "name": "agent-13",
@@ -109,7 +109,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Агент 13"
   },
   {
     "name": "america-chavez",
@@ -125,7 +125,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Чавез/Америка"
   },
   {
     "name": "angel",
@@ -141,7 +141,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Ангел"
   },
   {
     "name": "angela",
@@ -157,7 +157,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Анжела"
   },
   {
     "name": "ant-man",
@@ -173,7 +173,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Человек-Муравей"
   },
   {
     "name": "apocalypse",
@@ -189,7 +189,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Апокалипсис"
   },
   {
     "name": "armor",
@@ -205,7 +205,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Армор/Броня"
   },
   {
     "name": "arnim-zola",
@@ -221,7 +221,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Арним Зола"
   },
   {
     "name": "baron-mordo",
@@ -237,7 +237,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Барон Мордо"
   },
   {
     "name": "beast",
@@ -253,7 +253,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Зверь/Тварь"
   },
   {
     "name": "bishop",
@@ -269,7 +269,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Бишоп/Епископ"
   },
   {
     "name": "bast",
@@ -285,7 +285,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Баст"
   },
   {
     "name": "black-bolt",
@@ -301,7 +301,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Чёрный Гром/Черный Гром"
   },
   {
     "name": "black-cat",
@@ -317,7 +317,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Чёрная Кошка/Черная Кошка/Фелиция"
   },
   {
     "name": "black-panther",
@@ -333,7 +333,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Черная Пантера/Чёрная Пантера/Т'Чалла"
   },
   {
     "name": "black-widow",
@@ -349,7 +349,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Черная Вдова/Чёрная Вдова"
   },
   {
     "name": "blade",
@@ -365,7 +365,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Блейд"
   },
   {
     "name": "blue-marvel",
@@ -381,7 +381,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Синее Чудо/Синий Марвел"
   },
   {
     "name": "brood",
@@ -397,7 +397,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Бруд"
   },
   {
     "name": "bucky-barnes",
@@ -413,7 +413,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Зимний Солдат/Баки Барнс"
   },
   {
     "name": "cable",
@@ -429,7 +429,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Кейбл"
   },
   {
     "name": "captain-america",
@@ -445,7 +445,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Капитан Америка/Кэп"
   },
   {
     "name": "captain-marvel",
@@ -461,7 +461,7 @@
     "draw": true,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Капитан Марвел"
   },
   {
     "name": "carnage",
@@ -477,7 +477,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Карнаж/Красный"
   },
   {
     "name": "cerebro",
@@ -493,7 +493,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Церебро"
   },
   {
     "name": "cloak",
@@ -509,7 +509,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Плащ"
   },
   {
     "name": "colleen-wing",
@@ -525,7 +525,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Колин Винг"
   },
   {
     "name": "colossus",
@@ -541,7 +541,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Колосс"
   },
   {
     "name": "cosmo",
@@ -557,7 +557,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Космо"
   },
   {
     "name": "crossbones",
@@ -573,7 +573,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Кроссбоунс"
   },
   {
     "name": "crystal",
@@ -589,7 +589,7 @@
     "draw": true,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Кристалл"
   },
   {
     "name": "cyclops",
@@ -605,7 +605,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Циклоп/Циклопы"
   },
   {
     "name": "darkhawk",
@@ -621,7 +621,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Тёмный Ястреб/Темный Ястреб"
   },
   {
     "name": "dazzler",
@@ -637,7 +637,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Ослепительная/Даззлер"
   },
   {
     "name": "dagger",
@@ -653,7 +653,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Даггер/Кинжал"
   },
   {
     "name": "daredevil",
@@ -669,7 +669,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Сорвиголова"
   },
   {
     "name": "deadpool",
@@ -685,7 +685,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Дэдпул/Дедпул"
   },
   {
     "name": "death",
@@ -701,7 +701,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Смерть"
   },
   {
     "name": "deathlok",
@@ -717,7 +717,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Детлок/Дезлок"
   },
   {
     "name": "debrii",
@@ -733,7 +733,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Дебри"
   },
   {
     "name": "destroyer",
@@ -749,7 +749,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Разрушитель"
   },
   {
     "name": "devil-dinosaur",
@@ -765,7 +765,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Дьявольский Динозавр"
   },
   {
     "name": "doctor-doom",
@@ -781,7 +781,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Доктор Дум/Дум/Бум"
   },
   {
     "name": "doctor-octopus",
@@ -797,7 +797,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Доктор Осьминог/Октопус/Осьминог"
   },
   {
     "name": "doctor-strange",
@@ -813,7 +813,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Стрэндж/Стрендж/Доктор Стрэндж"
   },
   {
     "name": "domino",
@@ -829,7 +829,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Домино"
   },
   {
     "name": "dracula",
@@ -845,7 +845,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Дракула"
   },
   {
     "name": "drax",
@@ -861,7 +861,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Дракс"
   },
   {
     "name": "ebony-maw",
@@ -877,7 +877,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Эбони Мо"
   },
   {
     "name": "electro",
@@ -893,7 +893,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Электро"
   },
   {
     "name": "elektra",
@@ -909,7 +909,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Электра"
   },
   {
     "name": "enchantress",
@@ -925,7 +925,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Энчантресс/Чаровница"
   },
   {
     "name": "falcon",
@@ -941,7 +941,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Сокол"
   },
   {
     "name": "forge",
@@ -957,7 +957,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Кузнец"
   },
   {
     "name": "gambit",
@@ -973,7 +973,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Гамбит"
   },
   {
     "name": "gamora",
@@ -989,7 +989,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Гамора"
   },
   {
     "name": "ghost-rider",
@@ -1005,7 +1005,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Призрачный Гонщик"
   },
   {
     "name": "giganto",
@@ -1021,7 +1021,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Гиганто"
   },
   {
     "name": "ghost",
@@ -1037,7 +1037,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Призрак/Гост"
   },
   {
     "name": "goose",
@@ -1053,7 +1053,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Гуся/Гусь"
   },
   {
     "name": "green-goblin",
@@ -1069,7 +1069,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Зелёный Гоблин/Зеленый Гоблин"
   },
   {
     "name": "groot",
@@ -1085,7 +1085,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Грут"
   },
   {
     "name": "helicarrier",
@@ -1101,7 +1101,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Хеликаррьер"
   },
   {
     "name": "hawkeye",
@@ -1117,7 +1117,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Соколиный Глаз"
   },
   {
     "name": "hazmat",
@@ -1133,7 +1133,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Хазмат"
   },
   {
     "name": "heimdall",
@@ -1149,7 +1149,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Хеймдалль"
   },
   {
     "name": "hela",
@@ -1165,7 +1165,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Хела"
   },
   {
     "name": "hellcow",
@@ -1181,7 +1181,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Адская Корова"
   },
   {
     "name": "hobgoblin",
@@ -1197,7 +1197,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Хобгоблин"
   },
   {
     "name": "hulk-buster",
@@ -1213,7 +1213,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Халкбастер"
   },
   {
     "name": "hulk",
@@ -1229,7 +1229,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Халк"
   },
   {
     "name": "human-torch",
@@ -1245,7 +1245,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Человек-Факел"
   },
   {
     "name": "iceman",
@@ -1261,7 +1261,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Человек-Лёд"
   },
   {
     "name": "invisible-woman",
@@ -1277,7 +1277,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Невидимка/Женщина Невидимка"
   },
   {
     "name": "iron-fist",
@@ -1293,7 +1293,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Железный Кулак"
   },
   {
     "name": "iron-man",
@@ -1309,7 +1309,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Железный Человек/Тони Старк"
   },
   {
     "name": "ironheart",
@@ -1325,7 +1325,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Железное Сердце"
   },
   {
     "name": "jane-foster-mighty-thor",
@@ -1341,7 +1341,7 @@
     "draw": true,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Джейн Фостер/Могучий Тор"
   },
   {
     "name": "jessica-jones",
@@ -1357,7 +1357,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Джессика Джонс"
   },
   {
     "name": "jubilee",
@@ -1373,7 +1373,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Джубили/Юбилей"
   },
   {
     "name": "juggernaut",
@@ -1389,7 +1389,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Джаггернаут"
   },
   {
     "name": "ka-zar",
@@ -1405,7 +1405,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Ка-зар/Казар"
   },
   {
     "name": "killmonger",
@@ -1421,7 +1421,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Киллмонгер"
   },
   {
     "name": "knull",
@@ -1437,7 +1437,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Налл/Кналл"
   },
   {
     "name": "kitty-pryde",
@@ -1453,7 +1453,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Китти Прайд"
   },
   {
     "name": "kingpin",
@@ -1469,7 +1469,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Кингпин/Фиск"
   },
   {
     "name": "klaw",
@@ -1485,7 +1485,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Кло"
   },
   {
     "name": "korg",
@@ -1501,7 +1501,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Корг"
   },
   {
     "name": "kraven",
@@ -1517,7 +1517,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Крэйвен/Кравен"
   },
   {
     "name": "lady-sif",
@@ -1533,7 +1533,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Леди Сиф"
   },
   {
     "name": "leader",
@@ -1549,7 +1549,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Лидер"
   },
   {
     "name": "hit-monkey",
@@ -1565,7 +1565,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Обезьяна Киллер"
   },
   {
     "name": "leech",
@@ -1581,7 +1581,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Лич/Пиявка"
   },
   {
     "name": "lizard",
@@ -1597,7 +1597,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Ящер"
   },
   {
     "name": "lockjaw",
@@ -1613,7 +1613,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Локджо"
   },
   {
     "name": "luke-cage",
@@ -1629,7 +1629,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Люк Кейдж"
   },
   {
     "name": "modok",
@@ -1645,7 +1645,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Модок"
   },
   {
     "name": "maria-hill",
@@ -1661,7 +1661,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Мария Хилл"
   },
   {
     "name": "magik",
@@ -1677,7 +1677,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Магик/Мэджик"
   },
   {
     "name": "magneto",
@@ -1693,7 +1693,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Магнето/Магнит"
   },
   {
     "name": "mantis",
@@ -1709,7 +1709,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Мантис"
   },
   {
     "name": "maximus",
@@ -1725,7 +1725,7 @@
     "draw": true,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Максимус"
   },
   {
     "name": "medusa",
@@ -1741,7 +1741,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Медуза"
   },
   {
     "name": "miles-morales",
@@ -1757,7 +1757,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Человек-Паук/Майлз Моралес"
   },
   {
     "name": "mbaku",
@@ -1773,7 +1773,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "М'Баку"
   },
   {
     "name": "master-mold",
@@ -1789,7 +1789,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Мастер Молд"
   },
   {
     "name": "mister-fantastic",
@@ -1805,7 +1805,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Мистер Фантастик"
   },
   {
     "name": "mister-negative",
@@ -1821,7 +1821,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Мистер Негатив"
   },
   {
     "name": "mister-sinister",
@@ -1837,7 +1837,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Мистер Зловещий/Синистер"
   },
   {
     "name": "misty-knight",
@@ -1853,7 +1853,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Мисти Найт"
   },
   {
     "name": "mojo",
@@ -1869,7 +1869,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Моджо"
   },
   {
     "name": "moon-girl",
@@ -1885,7 +1885,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Лунная Девочка"
   },
   {
     "name": "moon-knight",
@@ -1901,7 +1901,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Лунный Рыцарь"
   },
   {
     "name": "morbius",
@@ -1917,7 +1917,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Морбиус"
   },
   {
     "name": "morph",
@@ -1933,7 +1933,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Морф"
   },
   {
     "name": "multiple-man",
@@ -1949,7 +1949,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Множитель"
   },
   {
     "name": "mysterio",
@@ -1965,7 +1965,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Мистерио"
   },
   {
     "name": "mystique",
@@ -1981,7 +1981,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Мистик"
   },
   {
     "name": "nakia",
@@ -1997,7 +1997,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Накия"
   },
   {
     "name": "namor",
@@ -2013,7 +2013,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Нэмор"
   },
   {
     "name": "nick-fury",
@@ -2029,7 +2029,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Ник Фьюри"
   },
   {
     "name": "nightcrawler",
@@ -2045,7 +2045,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Ночной Змей"
   },
   {
     "name": "negasonic-teenage-warhead",
@@ -2061,7 +2061,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Боеголовка"
   },
   {
     "name": "nimrod",
@@ -2077,7 +2077,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Нимрод"
   },
   {
     "name": "nova",
@@ -2093,7 +2093,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Нова"
   },
   {
     "name": "odin",
@@ -2109,7 +2109,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Один"
   },
   {
     "name": "okoye",
@@ -2125,7 +2125,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Окойе"
   },
   {
     "name": "omega-red",
@@ -2141,7 +2141,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Омега Ред"
   },
   {
     "name": "orka",
@@ -2157,7 +2157,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Косатка/Орка"
   },
   {
     "name": "onslaught",
@@ -2173,7 +2173,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Онслот/Натиск"
   },
   {
     "name": "patriot",
@@ -2189,7 +2189,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Патриот"
   },
   {
     "name": "polaris",
@@ -2205,7 +2205,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Полярис"
   },
   {
     "name": "professor-x",
@@ -2221,7 +2221,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Ксавьер/Профессор Икс"
   },
   {
     "name": "psylocke",
@@ -2237,7 +2237,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Псайлок"
   },
   {
     "name": "punisher",
@@ -2253,7 +2253,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Каратель"
   },
   {
     "name": "quake",
@@ -2269,7 +2269,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Квейк/Дрожь"
   },
   {
     "name": "quicksilver",
@@ -2285,7 +2285,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Ртуть"
   },
   {
     "name": "quinjet",
@@ -2301,7 +2301,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Квинджет"
   },
   {
     "name": "red-skull",
@@ -2317,7 +2317,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Красный Череп"
   },
   {
     "name": "rescue",
@@ -2333,7 +2333,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Спасатель/Пеппер"
   },
   {
     "name": "rhino",
@@ -2349,7 +2349,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Носорог"
   },
   {
     "name": "rocket-racoon",
@@ -2365,7 +2365,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Енот Ракета"
   },
   {
     "name": "rockslide",
@@ -2381,7 +2381,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Рокслайд"
   },
   {
     "name": "rogue",
@@ -2397,7 +2397,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Рога/Шельма/Разбойница"
   },
   {
     "name": "ronan-the-accuser",
@@ -2413,7 +2413,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Ронан Обвинитель"
   },
   {
     "name": "shadow-king",
@@ -2429,7 +2429,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Король Теней"
   },
   {
     "name": "stature",
@@ -2445,7 +2445,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Высота"
   },
   {
     "name": "shanna",
@@ -2461,7 +2461,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Шанна"
   },
   {
     "name": "sauron",
@@ -2477,7 +2477,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Саурон"
   },
   {
     "name": "she-hulk",
@@ -2493,7 +2493,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Женщина Халк/Она Халк"
   },
   {
     "name": "super-skrull",
@@ -2509,7 +2509,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Супер Скрулл"
   },
   {
     "name": "shuri",
@@ -2525,7 +2525,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Шури"
   },
   {
     "name": "stegron",
@@ -2541,7 +2541,7 @@
     "draw": false,
     "discard": false,
     "release": false,
-    "name_ru": ""
+    "name_ru": "Стегрон"
   },
   {
     "name": "sentry",
@@ -2557,7 +2557,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Часовой"
   },
   {
     "name": "silver-surfer",
@@ -2573,7 +2573,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Серебряный Серфер"
   },
   {
     "name": "sabretooth",
@@ -2589,7 +2589,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Саблезубый"
   },
   {
     "name": "sandman",
@@ -2605,7 +2605,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Песочный Человек"
   },
   {
     "name": "scarlet-witch",
@@ -2621,7 +2621,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Алая Ведьма"
   },
   {
     "name": "scorpion",
@@ -2637,7 +2637,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Скорпион"
   },
   {
     "name": "sentinel",
@@ -2653,7 +2653,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Сентинел/Страж"
   },
   {
     "name": "sera",
@@ -2669,7 +2669,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Сера"
   },
   {
     "name": "shang-chi",
@@ -2685,7 +2685,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Шан-чи"
   },
   {
     "name": "shocker",
@@ -2701,7 +2701,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Шокер"
   },
   {
     "name": "spectrum",
@@ -2717,7 +2717,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Спектр/Спектрум"
   },
   {
     "name": "spider-man",
@@ -2733,7 +2733,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Паучок/Человек-Паук/Питер Паркер/Спайди"
   },
   {
     "name": "spider-woman",
@@ -2749,7 +2749,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Женщина-Паук"
   },
   {
     "name": "squirrel-girl",
@@ -2765,7 +2765,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Девочка-Белочка"
   },
   {
     "name": "star-lord",
@@ -2781,7 +2781,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Звездный Лорд"
   },
   {
     "name": "storm",
@@ -2797,7 +2797,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Шторм"
   },
   {
     "name": "strong-guy",
@@ -2813,7 +2813,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Силач/Сильный Парень"
   },
   {
     "name": "sunspot",
@@ -2829,7 +2829,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Санспот"
   },
   {
     "name": "swarm",
@@ -2845,7 +2845,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Сварм"
   },
   {
     "name": "sword-master",
@@ -2861,7 +2861,7 @@
     "draw": false,
     "discard": true,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Мастер Меча"
   },
   {
     "name": "taskmaster",
@@ -2877,7 +2877,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Таскмастер"
   },
   {
     "name": "thanos",
@@ -2893,7 +2893,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Танос"
   },
   {
     "name": "the-collector",
@@ -2909,7 +2909,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Коллекционер"
   },
   {
     "name": "the-hood",
@@ -2925,7 +2925,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Худ"
   },
   {
     "name": "the-infinaut",
@@ -2941,7 +2941,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Инфинаут"
   },
   {
     "name": "the-thing",
@@ -2957,7 +2957,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Существо"
   },
   {
     "name": "thor",
@@ -2973,7 +2973,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Тор"
   },
   {
     "name": "typhoid-mary",
@@ -2989,7 +2989,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Тифозная Мэри"
   },
   {
     "name": "titania",
@@ -3005,7 +3005,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Титания"
   },
   {
     "name": "uatu",
@@ -3021,7 +3021,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Смотритель Уату"
   },
   {
     "name": "ultron",
@@ -3037,7 +3037,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Альтрон"
   },
   {
     "name": "valkyrie",
@@ -3053,7 +3053,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Валькирия"
   },
   {
     "name": "venom",
@@ -3069,7 +3069,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Веном"
   },
   {
     "name": "viper",
@@ -3085,7 +3085,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Вайпер"
   },
   {
     "name": "vision",
@@ -3101,7 +3101,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Вижн"
   },
   {
     "name": "vulture",
@@ -3117,7 +3117,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Стервятник"
   },
   {
     "name": "warpath",
@@ -3133,7 +3133,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Варпач"
   },
   {
     "name": "wasp",
@@ -3149,7 +3149,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Оса"
   },
   {
     "name": "wave",
@@ -3165,7 +3165,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Вейв/Волна"
   },
   {
     "name": "white-queen",
@@ -3181,7 +3181,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Белая Королева"
   },
   {
     "name": "white-tiger",
@@ -3197,7 +3197,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Белый Тигр/Белая Тигрица"
   },
   {
     "name": "wolfsbane",
@@ -3213,7 +3213,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Волчица"
   },
   {
     "name": "wolverine",
@@ -3229,7 +3229,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Росомаха/Логан"
   },
   {
     "name": "wong",
@@ -3245,7 +3245,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Вонг"
   },
   {
     "name": "yellowjacket",
@@ -3261,7 +3261,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Желтный Шершень/Жакет"
   },
   {
     "name": "yondu",
@@ -3277,7 +3277,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Йонду"
   },
   {
     "name": "zabu",
@@ -3293,7 +3293,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Забу"
   },
   {
     "name": "zero",
@@ -3309,7 +3309,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Зеро/Ноль/Нуль"
   },
   {
     "name": "absorbing-man",
@@ -3325,7 +3325,7 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Поглотитель"
   },
   {
     "name": "galactus",
@@ -3341,6 +3341,6 @@
     "draw": false,
     "discard": false,
     "release": true,
-    "name_ru": ""
+    "name_ru": "Галактус"
   }
 ]

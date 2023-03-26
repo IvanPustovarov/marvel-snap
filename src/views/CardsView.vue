@@ -8,23 +8,23 @@ import type { Card } from '@/interfaces/Card';
 const store = useCardStore();
 
 interface filter {
-  power?: null,
-  cost?: null,
-  pool?: null,
-  onReveal: boolean | string,
-  ongoing: boolean | string,
-  move: boolean | string,
-  destroy: boolean | string,
-  noAbility: boolean | string,
-  draw: boolean | string,
-  discard: boolean | string,
-  release: boolean | string,
+  power?: number,
+  cost?: number,
+  pool?: number,
+  onReveal?: boolean,
+  ongoing?: boolean,
+  move?: boolean,
+  destroy?: boolean,
+  noAbility?: boolean,
+  draw?: boolean,
+  discard?: boolean,
+  release?: boolean,
 }
 
 const filters: filter = reactive({
-  power: null,
-  cost: null,
-  pool: null,
+  power: undefined,
+  cost: undefined,
+  pool: undefined,
   onReveal: false,
   ongoing: false,
   move: false,
@@ -36,12 +36,14 @@ const filters: filter = reactive({
 });
 
 const selectedAbility = ref('');
-const filteredCardArray: Ref<Card[]> = ref([]);
+const filteredCardArray: Ref<Card[]> = ref(store.cards);
+const isFilter = ref(false);
 
-acceptFilters(filters);
+
+//acceptFilters(filters);
 
 const pools = [
-   {
+  {
     value: 1
   },
   {
@@ -157,45 +159,27 @@ watch(filters, (newFilters) => {
 });
 
 function acceptFilters (filtersObj: filter) {
-  const localObjToFilter = {};
-  const resultSet = new Set();
-  let flatted: any = [];
-  for (const key in filtersObj) {
-    if (Object.prototype.hasOwnProperty.call(filtersObj, key)) {
-      const value = filtersObj[(key as keyof filter)];
-      if(value) {
-        Object.defineProperty(localObjToFilter, key, {
-          value: value,
-          writable: true,
-          enumerable: true,
-          configurable: true
-        });
-      }
-    }
-  }
+   function callBack (item: Card) {
+    return (item.power === filtersObj.power &&
+          item.cost === filtersObj.cost &&
+          item.pool === filtersObj.pool &&
+            (item.move === filtersObj.move && item.move != false ||
+            item.destroy === filtersObj.destroy && item.destroy != false  ||
+            item.noAbility === filtersObj.noAbility && item.noAbility != false ||
+            item.draw === filtersObj.draw && item.draw != false ||
+            item.discard === filtersObj.discard && item.discard != false) &&
+          item.onReveal === filtersObj.onReveal &&
+          item.ongoing === filtersObj.ongoing &&
+          item.release === filtersObj.release) ;
+   }
 
-  //console.log(localObjToFilter);
-
-  for (const key in localObjToFilter) {
-    if (Object.prototype.hasOwnProperty.call(localObjToFilter, key)) {
-      const value = (localObjToFilter as any)[key];
-      const result = store.cards.filter((item)=> item[key as keyof Card] === value);
-      resultSet.add(result);
-      flatted = ([...resultSet].flatMap(num => num));
-      console.log(filteredCardArray.value);
-      //console.log(resultSet);
-      // filteredCardArray.value = [...new Set(result.filter((x) => resultSet.has(x)))];
-      //console.log(filteredCardArray.value);
-    }
-  }
-
-  (filteredCardArray.value as any) = flatted.filter((value: any, index: any, array: any) => array.indexOf(value) === index);
+   filteredCardArray.value = store.cards.filter(callBack);
 }
 
 function resetFiltes() {
-  filters.cost = null;
-  filters.power = null;
-  filters.pool = null;
+  filters.power = undefined;
+  filters.cost = undefined;
+  filters.pool = undefined;
   filters.onReveal = false;
   filters.ongoing = false;
   filters.move = false;
@@ -204,6 +188,8 @@ function resetFiltes() {
   filters.draw = false;
   filters.discard = false;
   filters.release = true;
+
+  filteredCardArray.value = store.cards;
 }
 
 
@@ -218,6 +204,7 @@ function resetFiltes() {
         type="radio"
         v-model="filters.power"
         :value="item.value"
+        :disabled="!isFilter"
       >
     </div>
 
@@ -228,6 +215,7 @@ function resetFiltes() {
         type="radio"
         v-model="filters.cost"
         :value="item.value"
+        :disabled="!isFilter"
       >
     </div>
 
@@ -238,13 +226,14 @@ function resetFiltes() {
         type="radio"
         v-model="filters.pool"
         :value="item.value"
+        :disabled="!isFilter"
       >
     </div>
 
     <div class="filter-item-container">
       <label for="">Абилки</label>
-      <select v-model="selectedAbility">
-        <option v-for="option in abilityFilters" :value="option.value">
+      <select v-model="selectedAbility" :disabled="!isFilter">
+        <option v-for="option in abilityFilters" :value="option.value" >
           {{ option.text }}
         </option>
       </select>
@@ -253,17 +242,26 @@ function resetFiltes() {
     <div class="filter-item-container text-checkbox">
       <div>
         <label for="">При раскрытии</label>
-        <input type="checkbox" v-model="filters.onReveal">
+        <input type="checkbox" v-model="filters.onReveal" :disabled="!isFilter">
       </div>
 
       <div>
         <label for="">Продолжительный эффект</label>
-        <input type="checkbox" v-model="filters.ongoing">
+        <input
+          type="checkbox"
+          v-model="filters.ongoing"
+          :disabled="!isFilter"
+          >
       </div>
 
       <div>
         <label for="">В игре:</label>
-        <input type="checkbox" v-model="filters.release">
+        <input type="checkbox" v-model="filters.release" :disabled="!isFilter">
+      </div>
+
+      <div>
+        <label for="">Включить фильтрацию</label>
+        <input type="checkbox" v-model="isFilter">
       </div>
 
       <button @click="resetFiltes">Сбросить фильтры</button>
@@ -276,12 +274,6 @@ function resetFiltes() {
         :card="card"
       />
       <div v-if="!filteredCardArray.length">Нет совпадений с фильтрами :(</div>
-      <!-- <CardComponent
-        v-if="!filteredCardArray.length"
-        v-for="card in store.cards"
-        :key="card.name"
-        :card="card"
-      /> -->
   </div>
 </template>
 
