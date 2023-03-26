@@ -40,8 +40,6 @@ const filteredCardArray: Ref<Card[]> = ref(store.cards);
 const isFilter = ref(false);
 
 
-//acceptFilters(filters);
-
 const pools = [
   {
     value: 1
@@ -176,6 +174,14 @@ function acceptFilters (filtersObj: filter) {
    filteredCardArray.value = store.cards.filter(callBack);
 }
 
+  function getImageUrl (name: string) {
+    if(name === filters.power?.toString()) {
+      return new URL(`../assets/img/active-power-icon.webp`, import.meta.url).href
+    } else {
+      return new URL(`../assets/img/not-active-power-icon.webp`, import.meta.url).href
+    }
+  }
+
 function resetFiltes() {
   filters.power = undefined;
   filters.cost = undefined;
@@ -192,23 +198,23 @@ function resetFiltes() {
   filteredCardArray.value = store.cards;
 }
 
-
 </script>
 
 <template>
   <div class="filters-container">
     <div class="filter-item-container">
-      <label for="">Сила</label>
-      <input
-        v-for="item in powers"
-        type="radio"
-        v-model="filters.power"
-        :value="item.value"
-        :disabled="!isFilter"
-      >
+      сила
+      <label class="filter-item-container-radio" v-for="item in powers" :key="item.value">
+         <input
+          type="radio"
+          v-model="filters.power"
+          :value="item.value"
+        >
+          <img :src="getImageUrl(item.value.toString())" class="icon-power" alt="power">
+      </label>
     </div>
 
-    <div class="filter-item-container">
+    <div class="filter-item-container-radio">
       <label for="">Стоимость</label>
      <input
         v-for="item in costs"
@@ -219,7 +225,7 @@ function resetFiltes() {
       >
     </div>
 
-    <div class="filter-item-container">
+    <div class="filter-item-container-radio">
       <label for="">Пул</label>
       <input
         v-for="item in pools"
@@ -266,6 +272,11 @@ function resetFiltes() {
 
       <button @click="resetFiltes">Сбросить фильтры</button>
     </div>
+
+    <div class="power-icon-container">
+      <span class="power-value">1</span>
+      <img :src="getImageUrl('not-active-power-icon')" alt="power">
+    </div>
   </div>
   <div class="container-cards">
       <CardComponent
@@ -297,6 +308,37 @@ function resetFiltes() {
   }
   & .filter-item-container{
     display: flex;
+  }
+
+  & .filter-item-container-radio{
+    display: flex;
+
+    .icon-power{
+        max-width: 30px;
+    }
+
+    input {
+      display: none;
+    }
+
+
+  }
+
+  & .power-icon-container{
+    position: relative;
+    .power-value{
+      position: absolute;
+      top: 13%;
+      left: 7px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      font-size: 22px;
+      cursor: pointer;
+      -webkit-text-stroke: 0.1px rgb(180, 124, 61);
+    }
+      img {
+        max-width: 30px;
+      }
   }
 }
 .container-cards {

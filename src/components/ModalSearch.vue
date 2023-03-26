@@ -4,11 +4,10 @@ import type { Ref } from 'vue';
 import IconClose from './icons/IconClose.vue';
 import { useCardStore } from '@/stores/card';
 import type { Card } from '@/interfaces/Card';
-import { useRouter, useRoute } from 'vue-router';
+import { useRouter } from 'vue-router';
 
 const store = useCardStore();
 const router = useRouter();
-const route = useRoute();
 
 const emit = defineEmits<{
   (e: 'show', isShow: boolean): void
@@ -19,7 +18,10 @@ const coincidenceArray: Ref<Card[]> = ref([]);
 
 watch(userSearch, (newUserSearch) => {
   if(newUserSearch) {
-    coincidenceArray.value = store.cards.filter(item=> item.name.includes(newUserSearch) || item.description.includes(newUserSearch));
+    coincidenceArray.value = store.cards.filter(item =>
+    item.name.includes(newUserSearch) ||
+    item.description.includes(newUserSearch) ||
+    item.name_ru.toLocaleLowerCase().includes(newUserSearch));
   } else {
     coincidenceArray.value = [];
   }

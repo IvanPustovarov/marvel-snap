@@ -11,5 +11,6 @@ export interface Card {
   noAbility: boolean
   draw: boolean
   discard: boolean
-  release: boolean
+  release: boolean,
+  name_ru: string
 }
