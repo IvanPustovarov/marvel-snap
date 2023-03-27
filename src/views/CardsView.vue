@@ -69,7 +69,7 @@ const pools = [
 
 const powers = [
    {
-    value: 1
+    value: 0
   },
   {
     value: 2
@@ -203,14 +203,22 @@ function resetFiltes() {
 <template>
   <div class="filters-container">
     <div class="filter-item-container">
-      сила
+      <div class="property-name">Сила</div>
       <label class="filter-item-container-radio" v-for="item in powers" :key="item.value">
          <input
           type="radio"
           v-model="filters.power"
           :value="item.value"
         >
-          <img :src="getImageUrl(item.value.toString())" class="icon-power" alt="power">
+          <div class="power-icon-container">
+            <span v-if="item.value === 0" class="power-value">&#x3c;0</span>
+            <span v-if="item.value != 0" class="power-value">{{ item.value }}</span>
+            <img
+              :src="getImageUrl(item.value.toString())"
+              class="icon-power"
+              alt="power"
+            >
+          </div>
       </label>
     </div>
 
@@ -272,11 +280,6 @@ function resetFiltes() {
 
       <button @click="resetFiltes">Сбросить фильтры</button>
     </div>
-
-    <div class="power-icon-container">
-      <span class="power-value">1</span>
-      <img :src="getImageUrl('not-active-power-icon')" alt="power">
-    </div>
   </div>
   <div class="container-cards">
       <CardComponent
@@ -308,6 +311,11 @@ function resetFiltes() {
   }
   & .filter-item-container{
     display: flex;
+    gap: 5px;
+    & .property-name{
+      display: flex;
+      align-items: center;
+    }
   }
 
   & .filter-item-container-radio{
@@ -326,19 +334,28 @@ function resetFiltes() {
 
   & .power-icon-container{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .power-value-long{
+      width: 100px;
+      height: 30px;
+      padding: 0 5px;
+      background-color: rgba(255,115,35);
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .power-value{
       position: absolute;
-      top: 13%;
-      left: 7px;
       font-weight: bold;
       color: rgb(255, 255, 255);
       font-size: 22px;
       cursor: pointer;
       -webkit-text-stroke: 0.1px rgb(180, 124, 61);
     }
-      img {
-        max-width: 30px;
-      }
   }
 }
 .container-cards {
