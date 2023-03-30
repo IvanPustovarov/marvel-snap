@@ -4,7 +4,6 @@ import { ref, reactive, watch } from 'vue';
 import type { Ref } from 'vue';
 import { useCardStore } from '@/stores/card';
 import type { Card } from '@/interfaces/Card';
-import { fileURLToPath } from 'url';
 
 const store = useCardStore();
 
@@ -38,7 +37,6 @@ const filters: filter = reactive({
 
 const selectedAbility = ref('');
 const filteredCardArray: Ref<Card[]> = ref(store.cards);
-const isFilter = ref(false);
 
 
 const pools = [
@@ -71,6 +69,9 @@ const pools = [
 const powers = [
   {
     value: 0
+  },
+  {
+    value: 1
   },
   {
     value: 2
@@ -152,15 +153,14 @@ watch(selectedAbility, (newSelectedAbility) => {
 
 });
 
-
 watch(filters, (newFilters) => {
   acceptFilters(newFilters);
 });
 
 function acceptFilters (filtersObj: filter) {
-   function callBack (item: Card) {
+  function callBack (item: Card) {
     return (item.release === filtersObj.release &&
-      item.power === filtersObj.power &&
+          item.power === filtersObj.power &&
           item.cost === filtersObj.cost &&
           item.pool === filtersObj.pool &&
             (item.move === filtersObj.move && item.move != false ||
@@ -169,30 +169,32 @@ function acceptFilters (filtersObj: filter) {
             item.draw === filtersObj.draw && item.draw != false ||
             item.discard === filtersObj.discard && item.discard != false) &&
           item.onReveal === filtersObj.onReveal &&
-          item.ongoing === filtersObj.ongoing
-          ) ;
+          item.ongoing === filtersObj.ongoing);
    }
 
-   filteredCardArray.value = store.cards.filter(callBack);
+   for (const [key, value] of Object.entries(filtersObj)) {
+      if(value && key !== 'release') {
+        filteredCardArray.value = store.cards.filter(callBack);
+      }
+   }
 }
 
-  function getImageUrl (name: string, filterName: string) {
-    if(filterName === 'power') {
+function getImageUrl (name: string, filterName: string) {
+  if(filterName === 'power') {
     if(name === filters.power?.toString()) {
         return new URL(`../assets/img/active-power-icon.webp`, import.meta.url).href
       } else {
-        return new URL(`../assets/img/not-active-power-icon.webp`, import.meta.url).href
-      }
-    }
-    if(filterName === 'cost') {
-       if(name === filters.cost?.toString()) {
-          return new URL(`../assets/img/active-cost-icon.webp`, import.meta.url).href
-        } else {
+          return new URL(`../assets/img/not-active-power-icon.webp`, import.meta.url).href
+        }
+  }
+  if(filterName === 'cost') {
+    if(name === filters.cost?.toString()) {
+        return new URL(`../assets/img/active-cost-icon.webp`, import.meta.url).href
+      } else {
           return new URL(`../assets/img/not-active-cost-icon.webp`, import.meta.url).href
         }
-    }
-
   }
+}
 
 function resetFiltes() {
   filters.power = undefined;
@@ -210,6 +212,10 @@ function resetFiltes() {
   filteredCardArray.value = store.cards;
 }
 
+function renderCards () {
+  return filteredCardArray.value;
+}
+
 </script>
 
 <template>
@@ -222,9 +228,9 @@ function resetFiltes() {
             v-model="filters.power"
             :value="item.value"
           >
-          <div class="power-icon-container">
-            <span v-if="item.value === 0" class="power-value">&#x3c;0</span>
-            <span v-if="item.value != 0" class="power-value">{{ item.value }}</span>
+          <div class="filter-icon-container">
+            <span v-if="item.value === 0" class="filter-value">&#x3c;0</span>
+            <span v-if="item.value != 0" class="filter-value">{{ item.value }}</span>
             <img
               :src="getImageUrl(item.value.toString(), 'power')"
               class="icon-filter"
@@ -242,11 +248,11 @@ function resetFiltes() {
             v-model="filters.cost"
             :value="item.value"
           >
-            <div class="power-icon-container">
-            <span class="power-value">{{ item.value }}</span>
+            <div class="filter-icon-container">
+            <span class="filter-value">{{ item.value }}</span>
             <img
               :src="getImageUrl(item.value.toString(), 'cost')"
-              class="icon-filter"
+              class="icon-filter__cost"
               alt="power"
             >
           </div>
@@ -260,13 +266,12 @@ function resetFiltes() {
         type="radio"
         v-model="filters.pool"
         :value="item.value"
-        :disabled="!isFilter"
       >
     </div>
 
     <div class="filter-item-container">
       <label for="">Абилки</label>
-      <select v-model="selectedAbility" :disabled="!isFilter">
+      <select v-model="selectedAbility">
         <option v-for="option in abilityFilters" :value="option.value" >
           {{ option.text }}
         </option>
@@ -276,7 +281,7 @@ function resetFiltes() {
     <div class="filter-item-container text-checkbox">
       <div>
         <label for="">При раскрытии</label>
-        <input type="checkbox" v-model="filters.onReveal" :disabled="!isFilter">
+        <input type="checkbox" v-model="filters.onReveal">
       </div>
 
       <div>
@@ -284,18 +289,12 @@ function resetFiltes() {
         <input
           type="checkbox"
           v-model="filters.ongoing"
-          :disabled="!isFilter"
           >
       </div>
 
       <div>
         <label for="">В игре:</label>
-        <input type="checkbox" v-model="filters.release" :disabled="!isFilter">
-      </div>
-
-      <div>
-        <label for="">Включить фильтрацию</label>
-        <input type="checkbox" v-model="isFilter">
+        <input type="checkbox" v-model="filters.release">
       </div>
 
       <button @click="resetFiltes">Сбросить фильтры</button>
@@ -303,11 +302,11 @@ function resetFiltes() {
   </div>
   <div class="container-cards">
       <CardComponent
-        v-for="card in filteredCardArray"
+        v-for="card in renderCards()"
         :key="card.name"
         :card="card"
       />
-      <div v-if="!filteredCardArray.length">Нет совпадений с фильтрами :(</div>
+      <div v-if="!renderCards().length">Нет совпадений с фильтрами :(</div>
   </div>
 </template>
 
@@ -342,7 +341,10 @@ function resetFiltes() {
     display: flex;
 
     .icon-filter{
-        max-width: 35px;
+      max-width: 35px;
+        &__cost{
+          max-width: 40px;
+        }
     }
 
     input {
@@ -352,28 +354,18 @@ function resetFiltes() {
 
   }
 
-  & .power-icon-container{
+  & .filter-icon-container{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
-    .power-value-long{
-      width: 100px;
-      height: 30px;
-      padding: 0 5px;
-      background-color: rgba(255,115,35);
-      border-radius: 3px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .power-value{
+    .filter-value{
       position: absolute;
       font-weight: bold;
       color: rgb(255, 255, 255);
       font-size: 22px;
-      cursor: pointer;
       -webkit-text-stroke: 0.1px rgb(180, 124, 61);
     }
   }
