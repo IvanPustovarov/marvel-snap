@@ -4,6 +4,7 @@ import { ref, reactive, watch } from 'vue';
 import type { Ref } from 'vue';
 import { useCardStore } from '@/stores/card';
 import type { Card } from '@/interfaces/Card';
+import { fileURLToPath } from 'url';
 
 const store = useCardStore();
 
@@ -68,7 +69,7 @@ const pools = [
 ]
 
 const powers = [
-   {
+  {
     value: 0
   },
   {
@@ -96,6 +97,9 @@ const powers = [
 
 const costs = [
   {
+    value: 0
+  },
+  {
     value: 1
   },
   {
@@ -116,9 +120,6 @@ const costs = [
   {
     value: 7
   },
-  {
-    value: 8
-  }
 ]
 
 const abilityFilters = [
@@ -158,7 +159,8 @@ watch(filters, (newFilters) => {
 
 function acceptFilters (filtersObj: filter) {
    function callBack (item: Card) {
-    return (item.power === filtersObj.power &&
+    return (item.release === filtersObj.release &&
+      item.power === filtersObj.power &&
           item.cost === filtersObj.cost &&
           item.pool === filtersObj.pool &&
             (item.move === filtersObj.move && item.move != false ||
@@ -167,19 +169,29 @@ function acceptFilters (filtersObj: filter) {
             item.draw === filtersObj.draw && item.draw != false ||
             item.discard === filtersObj.discard && item.discard != false) &&
           item.onReveal === filtersObj.onReveal &&
-          item.ongoing === filtersObj.ongoing &&
-          item.release === filtersObj.release) ;
+          item.ongoing === filtersObj.ongoing
+          ) ;
    }
 
    filteredCardArray.value = store.cards.filter(callBack);
 }
 
-  function getImageUrl (name: string) {
+  function getImageUrl (name: string, filterName: string) {
+    if(filterName === 'power') {
     if(name === filters.power?.toString()) {
-      return new URL(`../assets/img/active-power-icon.webp`, import.meta.url).href
-    } else {
-      return new URL(`../assets/img/not-active-power-icon.webp`, import.meta.url).href
+        return new URL(`../assets/img/active-power-icon.webp`, import.meta.url).href
+      } else {
+        return new URL(`../assets/img/not-active-power-icon.webp`, import.meta.url).href
+      }
     }
+    if(filterName === 'cost') {
+       if(name === filters.cost?.toString()) {
+          return new URL(`../assets/img/active-cost-icon.webp`, import.meta.url).href
+        } else {
+          return new URL(`../assets/img/not-active-cost-icon.webp`, import.meta.url).href
+        }
+    }
+
   }
 
 function resetFiltes() {
@@ -205,32 +217,40 @@ function resetFiltes() {
     <div class="filter-item-container">
       <div class="property-name">Сила</div>
       <label class="filter-item-container-radio" v-for="item in powers" :key="item.value">
-         <input
-          type="radio"
-          v-model="filters.power"
-          :value="item.value"
-        >
+          <input
+            type="radio"
+            v-model="filters.power"
+            :value="item.value"
+          >
           <div class="power-icon-container">
             <span v-if="item.value === 0" class="power-value">&#x3c;0</span>
             <span v-if="item.value != 0" class="power-value">{{ item.value }}</span>
             <img
-              :src="getImageUrl(item.value.toString())"
-              class="icon-power"
+              :src="getImageUrl(item.value.toString(), 'power')"
+              class="icon-filter"
               alt="power"
             >
           </div>
       </label>
     </div>
 
-    <div class="filter-item-container-radio">
-      <label for="">Стоимость</label>
-     <input
-        v-for="item in costs"
-        type="radio"
-        v-model="filters.cost"
-        :value="item.value"
-        :disabled="!isFilter"
-      >
+    <div class="filter-item-container">
+      <div class="property-name">Стоимость</div>
+      <label class="filter-item-container-radio" v-for="item in costs" :key="item.value">
+          <input
+            type="radio"
+            v-model="filters.cost"
+            :value="item.value"
+          >
+            <div class="power-icon-container">
+            <span class="power-value">{{ item.value }}</span>
+            <img
+              :src="getImageUrl(item.value.toString(), 'cost')"
+              class="icon-filter"
+              alt="power"
+            >
+          </div>
+      </label>
     </div>
 
     <div class="filter-item-container-radio">
@@ -321,8 +341,8 @@ function resetFiltes() {
   & .filter-item-container-radio{
     display: flex;
 
-    .icon-power{
-        max-width: 30px;
+    .icon-filter{
+        max-width: 35px;
     }
 
     input {
