@@ -180,20 +180,11 @@ function acceptFilters (filtersObj: filter) {
 }
 
 function getImageUrl (name: string, filterName: string) {
-  if(filterName === 'power') {
-    if(name === filters.power?.toString()) {
-        return new URL(`../assets/img/active-power-icon.webp`, import.meta.url).href
+    if(name === (filters as any)[filterName]?.toString()) {
+        return new URL(`../assets/img/active-${filterName}-icon.webp`, import.meta.url).href
       } else {
-          return new URL(`../assets/img/not-active-power-icon.webp`, import.meta.url).href
+          return new URL(`../assets/img/not-active-${filterName}-icon.webp`, import.meta.url).href
         }
-  }
-  if(filterName === 'cost') {
-    if(name === filters.cost?.toString()) {
-        return new URL(`../assets/img/active-cost-icon.webp`, import.meta.url).href
-      } else {
-          return new URL(`../assets/img/not-active-cost-icon.webp`, import.meta.url).href
-        }
-  }
 }
 
 function resetFiltes() {
@@ -259,14 +250,19 @@ function renderCards () {
       </label>
     </div>
 
-    <div class="filter-item-container-radio">
-      <label for="">Пул</label>
-      <input
-        v-for="item in pools"
-        type="radio"
-        v-model="filters.pool"
-        :value="item.value"
-      >
+    <div class="filter-item-container">
+      <div class="property-name">Пул</div>
+      <label class="filter-item-container-radio" v-for="item in pools" :key="item.value">
+        <div class="input-pool-container">
+          <input
+            type="radio"
+            v-model="filters.pool"
+            :value="item.value"
+            class="input-pool"
+          >
+          <span class="filter-value__pool">{{ item.value }}</span>
+        </div>
+      </label>
     </div>
 
     <div class="filter-item-container">
@@ -331,6 +327,7 @@ function renderCards () {
   & .filter-item-container{
     display: flex;
     gap: 5px;
+    margin-bottom: 5px;
     & .property-name{
       display: flex;
       align-items: center;
@@ -345,10 +342,50 @@ function renderCards () {
         &__cost{
           max-width: 40px;
         }
+
+        &__pool{
+          background-color: aqua;
+          width: 30px;
+          height: 30px;
+        }
     }
 
     input {
       display: none;
+    }
+
+    .input-pool-container{
+      position: relative;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all ease 0.2s;
+      .filter-value__pool{
+          position: absolute;
+          color: black;
+          padding: 5px;
+      }
+      .input-pool{
+        display: block !important;
+        appearance: none;
+        width: 2rem;
+        height: 2rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        box-shadow: -2px -2px 4px rgba(255,255,255,0.5),
+            3px 2px 2px rgba(0, 0, 0, 0.5);
+
+
+        &:checked{
+           background-color: rgba(180, 180, 180, 0.9);
+           box-shadow: inset -2px -2px 4px rgba(255,255,255,0.5),
+           inset 3px 2px 2px rgba(70,70,70, 0.5);
+
+        }
+      }
     }
 
 
