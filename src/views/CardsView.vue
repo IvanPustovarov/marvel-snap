@@ -4,6 +4,7 @@ import { ref, reactive, watch } from 'vue';
 import type { Ref } from 'vue';
 import { useCardStore } from '@/stores/card';
 import type { Card } from '@/interfaces/Card';
+import { title } from 'process';
 
 const store = useCardStore();
 
@@ -34,6 +35,49 @@ const filters: filter = reactive({
   discard: false,
   release: true,
 });
+
+const filtersAbility = reactive([
+  {
+    move: filters.move,
+    title: 'move',
+    text: "Движ"
+  },
+  {
+    destroy: filters.destroy,
+    title: 'destroy',
+    text: "Уничтожается"
+  },
+  {
+    noAbility: filters.noAbility,
+    title: 'noAbility',
+    text: "Нет свойства"
+  },
+  {
+    draw: filters.draw,
+    title: 'draw',
+    text: "Берёт"
+  },
+  {
+    discard: filters.discard,
+    title: 'discard',
+    text: "Сброс"
+  },
+  {
+    onReveal: filters.onReveal,
+    title: 'onReveal',
+    text: "При раскрытии"
+  },
+  {
+    ongoing: filters.ongoing,
+    title: 'ongoing',
+    text: "Продолжительный эффект"
+  },
+  {
+    release: filters.release,
+    title: 'release',
+    text: "В игре"
+  }
+])
 
 const selectedAbility = ref('');
 const filteredCardArray: Ref<Card[]> = ref(store.cards);
@@ -198,6 +242,13 @@ function resetFiltes() {
   filters.noAbility = false;
   filters.draw = false;
   filters.discard = false;
+
+  for (let index = 0; index < filtersAbility.length; index++) {
+    let element = filtersAbility[index];
+    (element as any)[element.title] = false;
+  }
+  const releaseAbility = filtersAbility.find((item)=> item.title === 'release');
+  (releaseAbility as any).release = true;
   filters.release = true;
 
   filteredCardArray.value = store.cards;
@@ -205,6 +256,11 @@ function resetFiltes() {
 
 function renderCards () {
   return filteredCardArray.value;
+}
+
+function setCheckAbility (item: any) {
+  item[item.title] = !item[item.title];
+  (filters as any)[item.title] = item[item.title];
 }
 
 </script>
@@ -266,33 +322,18 @@ function renderCards () {
     </div>
 
     <div class="filter-item-container">
-      <label for="">Абилки</label>
-      <select v-model="selectedAbility">
-        <option v-for="option in abilityFilters" :value="option.value" >
-          {{ option.text }}
-        </option>
-      </select>
+      <div
+        class="ability-item"
+        v-for="item in filtersAbility"
+        :key="item.text"
+        :class="(item as any)[item.title] ? 'ability-item__checked' : ''"
+        @click="setCheckAbility(item)"
+        >
+        {{ item.text }}
+      </div>
     </div>
 
     <div class="filter-item-container text-checkbox">
-      <div>
-        <label for="">При раскрытии</label>
-        <input type="checkbox" v-model="filters.onReveal">
-      </div>
-
-      <div>
-        <label for="">Продолжительный эффект</label>
-        <input
-          type="checkbox"
-          v-model="filters.ongoing"
-          >
-      </div>
-
-      <div>
-        <label for="">В игре:</label>
-        <input type="checkbox" v-model="filters.release">
-      </div>
-
       <button @click="resetFiltes">Сбросить фильтры</button>
     </div>
   </div>
@@ -312,7 +353,7 @@ function renderCards () {
   min-height: 100px;
   border-radius: 4px;
   background-color: rgb(48, 47, 63);
-  min-width: 300px;
+  max-width: 475px;
   align-self: flex-start;
   margin: 20px 20px;
   padding: 10px;
@@ -328,9 +369,29 @@ function renderCards () {
     display: flex;
     gap: 5px;
     margin-bottom: 5px;
+    flex-wrap: wrap;
     & .property-name{
       display: flex;
       align-items: center;
+    }
+
+    & .ability-item{
+      display: flex;
+      cursor: pointer;
+      color: black;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      padding: 10px 15px;
+      background-color: rgb(255, 255, 255);
+       box-shadow: -2px -2px 4px rgba(255,255,255,0.5),
+            3px 2px 2px rgba(0, 0, 0, 0.5);
+
+      &__checked{
+        background-color: rgba(180, 180, 180, 0.9);
+         box-shadow: inset -2px -2px 4px rgba(255,255,255,0.5),
+           inset 3px 2px 2px rgba(70,70,70, 0.5);
+      }
     }
   }
 
@@ -344,7 +405,6 @@ function renderCards () {
         }
 
         &__pool{
-          background-color: aqua;
           width: 30px;
           height: 30px;
         }
