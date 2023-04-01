@@ -40,22 +40,22 @@ const filtersAbility = reactive([
   {
     move: filters.move,
     title: 'move',
-    text: "Движ"
+    text: "Движение"
   },
   {
     destroy: filters.destroy,
     title: 'destroy',
-    text: "Уничтожается"
+    text: "Уничтожение"
   },
   {
     noAbility: filters.noAbility,
     title: 'noAbility',
-    text: "Нет свойства"
+    text: "Нет свойств"
   },
   {
     draw: filters.draw,
     title: 'draw',
-    text: "Берёт"
+    text: "Добор"
   },
   {
     discard: filters.discard,
@@ -333,8 +333,8 @@ function setCheckAbility (item: any) {
       </div>
     </div>
 
-    <div class="filter-item-container text-checkbox">
-      <button @click="resetFiltes">Сбросить фильтры</button>
+    <div class="filter-item-container">
+      <button @click="resetFiltes" class="reset-button">Сбросить фильтры</button>
     </div>
   </div>
   <div class="container-cards">
@@ -352,7 +352,7 @@ function setCheckAbility (item: any) {
 .filters-container{
   min-height: 100px;
   border-radius: 4px;
-  background-color: rgb(48, 47, 63);
+  background-color: rgba(48, 47, 63, 0.5);
   max-width: 475px;
   align-self: flex-start;
   margin: 20px 20px;
@@ -360,11 +360,6 @@ function setCheckAbility (item: any) {
   display: flex;
   flex-direction: column;
 
-  & .text-checkbox{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
   & .filter-item-container{
     display: flex;
     gap: 5px;
@@ -391,6 +386,22 @@ function setCheckAbility (item: any) {
         background-color: rgba(180, 180, 180, 0.9);
          box-shadow: inset -2px -2px 4px rgba(255,255,255,0.5),
            inset 3px 2px 2px rgba(70,70,70, 0.5);
+      }
+    }
+
+    & .reset-button{
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 3px;
+      font-size: 18px;
+      background-color: rgb(155, 90, 199);
+      color: rgb(0, 0, 0);
+      margin-top: 10px;
+      transition: all ease 0.2s;
+      &:hover{
+        color: white;
+        background-color: rgb(100, 36, 142);
       }
     }
   }
